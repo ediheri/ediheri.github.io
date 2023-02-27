@@ -72,6 +72,7 @@
                 height: 5px !important;
             }
         }
+
     }
     
     //blogs//
@@ -199,6 +200,11 @@
     .portfolios{
         grid-template-columns: 1fr 1fr;
     }
+    .gallery{
+        .image{
+            width: calc(100% / 2);
+        }
+    }
     .blogs{
         grid-template-columns: 1fr 1fr;
     }
@@ -279,8 +285,11 @@
     }
 }
 
-// @media screen and (min-width: 970px){
-//     .section{
-//         padding: 7rem 6rem;
-//     }
-// }
+@media screen and (max-width: 600px){
+    .gallery{
+        .image{
+            padding: 4px;
+            width: 100%
+        }
+    }
+}
