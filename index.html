@@ -10,6 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
       crossorigin="anonymous"
@@ -326,7 +333,22 @@
           here is some of my work that I have done in various programming
           languages, illustrations, motion graphics and Photo manipulations.
         </p>
-        <div class="wrapper">
+        <div class="neck">
+          <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class="carousel">
+              <img src="img/illus-01.jpg" alt="demo" draggable="false" />
+              <img src="img/illus-02.jpg" alt="demo" draggable="false" />
+              <img src="img/illus-03.jpg" alt="demo" draggable="false" />
+              <img src="img/illus-04.jpg" alt="demo" draggable="false" />
+              <img src="img/illus-05.jpg" alt="demo" draggable="false" />
+              <img src="img/illus-06.jpg" alt="demo" draggable="false" />
+              <img src="img/illus-07.jpg" alt="demo" draggable="false" />
+            </div>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+        <!-- <div class="wrapper">
           <div class="gallery">
             <div class="image">
               <span><img src="img/illus-01.jpg" alt="" /></span>
@@ -346,9 +368,6 @@
             <div class="image">
               <span><img src="img/illus-06.jpg" alt="" /></span>
             </div>
-            <!-- <div class="image">
-              <span><img src="img/illus-07.jpg" alt="" /></span>
-            </div> -->
           </div>
         </div>
         <div class="preview-box">
@@ -371,7 +390,7 @@
             <img src="" alt="" />
           </div>
         </div>
-        <div class="shadow"></div>
+        <div class="shadow"></div> -->
       </section>
       <!--end of portfolio-->
       <!--blogs section-->
@@ -607,5 +626,6 @@
     </div>
     <!--end oftheme setup-->
     <script src="app.js"></script>
+    <script src="slider.js"></script>
   </body>
 </html>

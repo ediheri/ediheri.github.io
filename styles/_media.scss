@@ -293,3 +293,24 @@
         }
     }
 }
+
+@media screen and (max-width: 900px){
+    .wrapper{
+        .carousel{
+            img{
+                width: calc(100% / 2);
+            }
+        }
+    }
+    }
+    
+@media screen and (max-width: 550px){
+    .wrapper{
+        .carousel{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    }
+    

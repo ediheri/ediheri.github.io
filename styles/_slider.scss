@@ -1,0 +1,54 @@
+
+.neck{
+    padding: 0 35px;
+    min-height: 100vh;
+}
+.wrapper{
+    max-width: 1200px;
+    position: relative;
+    i{
+        top: 50%;
+        height: 46px;
+        width: 46px;
+        cursor: pointer;
+        position: absolute;
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 46px;
+        background: blueviolet;
+        border-radius: 50%;
+        transform: translateY(50%);
+        &:first-child{
+            left: -20px;
+            display: none;
+        }
+        &:last-child{
+            right: -20px;
+        }
+    }
+    .carousel{
+        font-size: 0px;
+        cursor: pointer;
+        overflow: hidden;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+        img{
+            height: 340px;
+            object-fit: cover;
+            margin-left: 14px;
+            width: calc(100% / 3);
+            pointer-events: none;
+            &:first-child{
+                margin-left: 0px;
+            }
+        }
+    }
+}
+//for js
+.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+
+    
