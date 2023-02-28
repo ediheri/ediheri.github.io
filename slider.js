@@ -1,6 +1,6 @@
 const carousel = document.querySelector(".carousel"),
 firstImg = document.querySelectorAll("img")[0];
-arrowIcons = document.querySelectorAll(".wrapper i");
+arrowIcons = document.querySelectorAll(".bag i");
 
 let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
 let firstImgWidth = firstImg.clientWidth + 14;
