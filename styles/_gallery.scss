@@ -7,7 +7,7 @@
     width: 100%;
     padding: 50px;
     .wrapper{ 
-        max-width: 800px;
+        max-width: 1024px;
         width: 100%;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -146,14 +146,9 @@
 
 
 @media screen and (max-width: 900px){
-    .photo-container{
-        .wrapper{
-            .gallery{
-                .image{
+    .photo-container .wrapper .gallery .image{
                     width: calc(100% / 2);
-                }
-            }
-        }
+
     }
     }
 
