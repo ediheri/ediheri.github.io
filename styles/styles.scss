@@ -505,6 +505,29 @@ section{
 // }
 
 //blogs section//
+.text-demo{
+    justify-content: center;
+    margin-top: -120px;
+    padding: 1.1rem;
+    border-bottom: 8px solid var(--color-secondary);
+    h4{
+        justify-content: center;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: .7rem;
+        transition: all .4s ease-in-out;
+        cursor: pointer;
+        &:hover{
+            color: var(--color-secondary);
+        }
+    }
+    p{
+        text-align: center;
+        color: var(clor --color-grey-2);
+        line-height: 2rem;
+        padding-bottom: 1rem;
+    }
+}
 .blogs{
     display: grid;
     // grid-template-columns: repeat(3, 1fr);
@@ -535,27 +558,28 @@ section{
     //         filter: grayscale(100%);
     //         transition: all .4s ease-in-out;
     //     }
-    //     .blog-text{
-    //         margin-top: -7px;
-    //         padding: 1.1rem;
-    //         border-top: 8px solid var(--color-secondary);
-    //         h4{
-    //             font-size: 1.5rem;
-    //             margin-bottom: .7rem;
-    //             transition: all .4s ease-in-out;
-    //             cursor: pointer;
-    //             &:hover{
-    //                 color: var(--color-secondary);
-    //             }
-    //         }
-    //         p{
-    //             color: var(clor --color-grey-2);
-    //             line-height: 2rem;
-    //             padding-bottom: 1rem;
-    //         }
-    //     }
-    // }
-}
+        // .text-demo{
+        //     justify-content: center;
+        //     margin-top: -7px;
+        //     padding: 1.1rem;
+        //     border-top: 8px solid var(--color-secondary);
+        //     h4{
+        //         font-size: 1.5rem;
+        //         margin-bottom: .7rem;
+        //         transition: all .4s ease-in-out;
+        //         cursor: pointer;
+        //         &:hover{
+        //             color: var(--color-secondary);
+        //         }
+        //     }
+        //     p{
+        //         color: var(clor --color-grey-2);
+        //         line-height: 2rem;
+        //         padding-bottom: 1rem;
+        //     }
+        // }
+    }
+
 
 //contact section//
 .contact-content-con{

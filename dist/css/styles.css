@@ -1119,6 +1119,30 @@ section {
   text-align: center;
 }
 
+.text-demo {
+  justify-content: center;
+  margin-top: -120px;
+  padding: 1.1rem;
+  border-bottom: 8px solid var(--color-secondary);
+}
+.text-demo h4 {
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.text-demo h4:hover {
+  color: var(--color-secondary);
+}
+.text-demo p {
+  text-align: center;
+  color: var(clor --color-grey-2);
+  line-height: 2rem;
+  padding-bottom: 1rem;
+}
+
 .blogs {
   display: grid;
   grid-gap: 2rem;
