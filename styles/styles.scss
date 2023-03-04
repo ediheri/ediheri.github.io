@@ -508,9 +508,9 @@ section{
 //blogs section//
 .text-demo{
     justify-content: center;
-    margin-top: -120px;
+    margin-top: 20px;
     padding: 1.1rem;
-    border-bottom: 8px solid var(--color-secondary);
+    border-top: 5px solid var(--color-secondary);
     h4{
         justify-content: center;
         text-align: center;
@@ -647,67 +647,30 @@ section{
             }
         }
     }
-//right contact info
-//     .right-contact{
-//         flex: 3;
-//         margin-left: 3rem;
-//         .input-control{
-//             margin: 1.5rem 0;
-//             input, textarea{
-//                 border-radius: 30px;
-//                 font-weight: inherit;
-//                 font-size: inherit;
-//                 font-family: inherit;
-//                 padding: .8rem 1.1rem;
-//                 outline: none;
-//                 border: none;
-//                 background-color: var(--color-grey-5);
-//                 width: 100%;
-//                 color: var(--color-white);
-//                 resize: none;
-//             }
-//         }
-//         .i-c-2{
-//             display: flex;
-//             :last-child{
-//                 margin-left: 1.5rem;
-//             }
-//         }
-//         .submit-btn{
-//             display: flex;
-//             justify-content: flex-start;
-//         }
-//     }
 }
 
-//right contac section for form updated
+//right contact section for form updated
 .right-contact{
     display: flex;
-    // flex: 3;
-    padding: 0 10px;
-    align-items: center;
-    justify-content: center;
-    // margin-left: 3rem;
+    flex: 3;
+    margin-left: 3rem;
 }
 .ruper{
-    width: 450px;
-    background: #6c7983;
+    width: 500px;
+    // background: #6c7983;
     border-radius: 5px;
 }
 .ruper .hadir{
-    font-size: 22px;
-    font-weight: 600;
-    padding: 20px 30px;
-    border-bottom: 1px solid #bfbfbf;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--color-secondary);
 }
 .ruper form{
-    margin: 35px 30px;
+    margin: 1.5rem 0;
 }
 form .dbl-field{
-    display: flex;
-    align-items: center;
-    margin-bottom: 25px;
-    justify-content: space-between;
+    margin-bottom: 20px;
 }
 .dbl-field .field{
     height: 50px;
@@ -716,33 +679,31 @@ form .dbl-field{
 }
 form .field input,
 form .message textarea{
-    height: 100%;
-    width: 100%;
     outline: none;
-    padding: 0 18px 0 48%;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #bfbfbf;
+    padding: .8rem 3rem;
+    border-radius: 15px;
+    background-color: var(--color-grey-5);
+    border: 1px solid var(--color-secondary);
 }
 form .field input::placeholder,
 form .message textarea::placeholder{
-    color: #bfbfbf;
+    color: var(--color-grey-2);
 }
 form .field input:focus,
 form .message textarea:focus{
-    border: 2px solid #0D6EFD;
+    border: 2px solid var(--color-secondary);
 }
 .ruper form i{
     position: absolute;
     left: 18px;
     top: 50%;
-    color: #bfbfbf;
+    color: var(--color-grey-2);
     font-size: 17px;
     pointer-events: none;
     transform: translateY(-50%);
 }
 form, .field input:focus ~ i{
-    color: #0D6EFD;
+    color: var(--color-grey-0);
 }
 form .message{
     position: relative;
@@ -766,17 +727,17 @@ form .button-area{
 .button-area button{
     font-size: 18px;
     border: none;
-    color: #fff;
+    color: var(--color-white);
     cursor: pointer;
-    border-radius: 5px;
-    background: #0D6EFD;
+    border-radius: 15px;
+    background: var(--color-secondary);
     padding: 13px 25px;
 }
 .button-area span{
-    color: #0D6EFD;
+    color: var(--color-secondary);
     margin-left: 30px;
 }
-@media(max-width: 600px){
+@media(max-width: 750px){
     .ruper .hadir{
         text-align: center;
     }

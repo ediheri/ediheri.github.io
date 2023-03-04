@@ -20,7 +20,6 @@ window.onload = ()=>{//once window loaded
         let clickImgIndex;
         gallery[i].onclick = ()=>{
             clickImgIndex = newIndex;
-            console.log(i);
             function preview(){
                 currentImg.textContent = newIndex + 1;
                 let selectedImgurl = gallery[newIndex].querySelector("img").src;
@@ -114,4 +113,4 @@ function pageTransitions(){
 }
 pageTransitions();
 
-//16;16
+
