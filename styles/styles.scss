@@ -1,5 +1,6 @@
 
 // @import 'gallery';
+@import 'form';
 @import 'gallery';
 @import 'video';
 @import 'playermusic';
@@ -646,38 +647,165 @@ section{
             }
         }
     }
-
-    .right-contact{
-        flex: 3;
-        margin-left: 3rem;
-        .input-control{
-            margin: 1.5rem 0;
-            input, textarea{
-                border-radius: 30px;
-                font-weight: inherit;
-                font-size: inherit;
-                font-family: inherit;
-                padding: .8rem 1.1rem;
-                outline: none;
-                border: none;
-                background-color: var(--color-grey-5);
-                width: 100%;
-                color: var(--color-white);
-                resize: none;
-            }
-        }
-        .i-c-2{
-            display: flex;
-            :last-child{
-                margin-left: 1.5rem;
-            }
-        }
-        .submit-btn{
-            display: flex;
-            justify-content: flex-start;
-        }
-    }
+//right contact info
+//     .right-contact{
+//         flex: 3;
+//         margin-left: 3rem;
+//         .input-control{
+//             margin: 1.5rem 0;
+//             input, textarea{
+//                 border-radius: 30px;
+//                 font-weight: inherit;
+//                 font-size: inherit;
+//                 font-family: inherit;
+//                 padding: .8rem 1.1rem;
+//                 outline: none;
+//                 border: none;
+//                 background-color: var(--color-grey-5);
+//                 width: 100%;
+//                 color: var(--color-white);
+//                 resize: none;
+//             }
+//         }
+//         .i-c-2{
+//             display: flex;
+//             :last-child{
+//                 margin-left: 1.5rem;
+//             }
+//         }
+//         .submit-btn{
+//             display: flex;
+//             justify-content: flex-start;
+//         }
+//     }
 }
+
+//right contac section for form updated
+.right-contact{
+    display: flex;
+    // flex: 3;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+    // margin-left: 3rem;
+}
+.ruper{
+    width: 450px;
+    background: #6c7983;
+    border-radius: 5px;
+}
+.ruper .hadir{
+    font-size: 22px;
+    font-weight: 600;
+    padding: 20px 30px;
+    border-bottom: 1px solid #bfbfbf;
+}
+.ruper form{
+    margin: 35px 30px;
+}
+form .dbl-field{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+.dbl-field .field{
+    height: 50px;
+    position: relative;
+    width: calc(100% / 2 - 13px);
+}
+form .field input,
+form .message textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 18px 0 48%;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+}
+form .field input::placeholder,
+form .message textarea::placeholder{
+    color: #bfbfbf;
+}
+form .field input:focus,
+form .message textarea:focus{
+    border: 2px solid #0D6EFD;
+}
+.ruper form i{
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    color: #bfbfbf;
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+form, .field input:focus ~ i{
+    color: #0D6EFD;
+}
+form .message{
+    position: relative;
+}
+form .message i{
+    top: 30px;
+    font-size: 20px;
+}
+form .message textarea{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 120px;
+    max-height: 300px;
+    padding: 15px 20px 0 48px;
+}
+form .button-area{
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+}
+.button-area button{
+    font-size: 18px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #0D6EFD;
+    padding: 13px 25px;
+}
+.button-area span{
+    color: #0D6EFD;
+    margin-left: 30px;
+}
+@media(max-width: 600px){
+    .ruper .hadir{
+        text-align: center;
+    }
+    form .dbl-field{
+        margin-bottom: 0px;
+        flex-direction: column;
+    }
+    .dbl-field .field{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    form .message textarea{
+        resize: none;
+    }
+    form .button-area{
+        flex-direction: column;
+    }
+    .button-area button{
+        width: 100%;
+    }
+    .button-area span{
+        text-align: center;
+        margin: 20px 0;
+    }
+
+}
+
+
+
 //editing section//
 .editing-content{
     max-width: 90vw;
