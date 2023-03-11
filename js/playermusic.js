@@ -57,6 +57,18 @@ let allMusic = [
         img: "music-7",
         src: "music-7"
     },
+    {
+        name: "Helen 2",
+        artist: "Nikos Spiliotis",
+        img: "music-8",
+        src: "music-8"
+    },
+    {
+        name: "Takayama",
+        artist: "Niwel",
+        img: "music-9",
+        src: "music-9"
+    },
 ];
 
 

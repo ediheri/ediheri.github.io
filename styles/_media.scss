@@ -126,12 +126,12 @@
         }
     }
 
-    footer{
-        font-size: 0.7rem;
-        transform: 
-        rotate(90deg)
-        translate(-10rem, -8rem);
-    }
+    // footer{
+    //     font-size: 0.7rem;
+    //     transform: 
+    //     rotate(90deg)
+    //     translate(-10rem, -8rem);
+    // }
 }
 
 @media screen and (max-width: 1024px){
@@ -163,9 +163,9 @@
         width: 90%;
         margin: 0 auto;
     }
-    .name{
-            font-size: 2.5rem !important;
-    }
+    // .name{
+    //         font-size: 2.5rem !important;
+    // }
     .right-header .name
     .header-content .left-header .image{
         margin: 0 auto;
@@ -270,7 +270,7 @@
         font-size: 0.7rem;
         transform: 
         rotate(90deg)
-        translate(-10rem, -8rem);
+        translate(-7rem, -4rem);
     }
 }
 

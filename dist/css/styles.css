@@ -199,8 +199,8 @@
 }
 .consist .popup-video span {
   position: absolute;
-  top: -10px;
-  right: -36px;
+  top: -15px;
+  right: -20px;
   font-size: 35px;
   color: #fff;
   cursor: pointer;
@@ -1134,6 +1134,7 @@ section {
   color: var(--color-secondary);
 }
 .header-content .right-header p {
+  color: var(--color-grey-2);
   margin: 1.5rem 0;
   line-height: 2rem;
 }
@@ -1336,6 +1337,7 @@ section {
 .port-text {
   padding: 2rem 0;
   text-align: center;
+  color: var(--color-grey-2);
 }
 
 .text-demo {
@@ -1356,8 +1358,8 @@ section {
   color: var(--color-secondary);
 }
 .text-demo p {
+  color: var(--color-grey-2);
   text-align: center;
-  color: var(clor --color-grey-2);
   line-height: 2rem;
   padding-bottom: 1rem;
 }
@@ -1390,10 +1392,12 @@ section {
   justify-content: space-between;
 }
 .contact-content-con .left-contact .contact-info .contact-item p {
+  color: var(--color-grey-2);
   margin: 0.3rem 0 !important;
   padding: 0 !important;
 }
 .contact-content-con .left-contact .contact-info .contact-item .icon {
+  color: var(--color-grey-2);
   display: grid;
   grid-template-columns: 40px 1fr;
 }
@@ -1466,6 +1470,7 @@ form .dbl-field {
 
 form .field input,
 form .message textarea {
+  color: var(--color-grey-2);
   outline: none;
   padding: 0.8rem 3rem;
   border-radius: 15px;
@@ -1511,6 +1516,7 @@ form .message i {
 }
 
 form .message textarea {
+  color: var(--color-grey-2);
   min-width: 100%;
   max-width: 100%;
   min-height: 120px;
@@ -1527,7 +1533,7 @@ form .button-area {
 .button-area button {
   font-size: 18px;
   border: none;
-  color: var(--color-white);
+  color: var(--color-grey-2);
   cursor: pointer;
   border-radius: 15px;
   background: var(--color-secondary);
@@ -1771,6 +1777,12 @@ footer {
   text-align: right;
   padding: 1rem;
   color: var(--color-white);
+  transition: all 0.3s ease-in-out;
+}
+
+footer a:hover {
+  cursor: pointer;
+  color: var(--color-grey-2);
 }
 
 @media screen and (max-width: 750px) {
@@ -1878,10 +1890,6 @@ footer {
   .controlls .control {
     margin: 1rem 0.3rem;
   }
-  footer {
-    font-size: 0.7rem;
-    transform: rotate(90deg) translate(-10rem, -8rem);
-  }
 }
 @media screen and (max-width: 1024px) {
   header {
@@ -1909,9 +1917,6 @@ footer {
     grid-row: 1;
     width: 90%;
     margin: 0 auto;
-  }
-  .name {
-    font-size: 2.5rem !important;
   }
   .right-header .name .header-content .left-header .image {
     margin: 0 auto;
@@ -1999,6 +2004,6 @@ footer {
   }
   footer {
     font-size: 0.7rem;
-    transform: rotate(90deg) translate(-10rem, -8rem);
+    transform: rotate(90deg) translate(-7rem, -4rem);
   }
 }/*# sourceMappingURL=styles.css.map */
