@@ -197,12 +197,13 @@ section{
             height: 90%;
             width: 68%;
             margin-left: 4rem;
-            background-color: var(--color-black);
+            background-color: var(--color-grey-6);
+            opacity: 2;
             transition: all .4s ease-in-out;
             img{
+                object-fit: cover;
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
                 transition: all .4s ease-in-out;
                 filter: grayscale(100%);
                 &:hover{
@@ -739,9 +740,6 @@ form .button-area{
     margin-left: 30px;
 }
 @media(max-width: 750px){
-    .ruper .hadir{
-        text-align: center;
-    }
     form .dbl-field{
         margin-bottom: 0px;
         flex-direction: column;

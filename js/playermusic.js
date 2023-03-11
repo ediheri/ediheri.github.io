@@ -2,25 +2,71 @@ const reaper = document.querySelector(".reaper"),
 musicImg = reaper.querySelector(".img-area img"),
 musicName = reaper.querySelector(".song-details .name"),
 musicArtist = reaper.querySelector(".song-details .artist"),
-mainAudio = reaper.querySelector("#main-audio"),
 playPauseBtn = reaper.querySelector(".play-pause"),
 prevBtn = reaper.querySelector("#prev"),
 nextBtn = reaper.querySelector("#next"),
+mainAudio = reaper.querySelector("#main-audio"),
 progressArea = reaper.querySelector(".progress-area"),
 progressBar = progressArea.querySelector(".progress-bar"),
 musicList = reaper.querySelector(".music-list"),
-showMoreBtn = reaper.querySelector("#more-music"),
-hideMusicBtn = musicList.querySelector("#close");
+moreMusicBtn = reaper.querySelector("#more-music"),
+closemoreMusic = musicList.querySelector("#close");
 
 
+//playlist songs//
+let allMusic = [
+    {
+        name: "Morning Station",
+        artist: "Tokyo Music Walker",
+        img: "music-1",
+        src: "music-1"
+    },
+    {
+        name: "Intro",
+        artist: "The XX",
+        img: "music-2",
+        src: "music-2"
+    },
+    {
+        name: "Timeout",
+        artist: "ATCH",
+        img: "music-3",
+        src: "music-3"
+    },
+    {
+        name: "Alone",
+        artist: "Hotham",
+        img: "music-4",
+        src: "music-4"
+    },
+    {
+        name: "Shine",
+        artist: "onycs",
+        img: "music-5",
+        src: "music-5"
+    },
+    {
+        name: "Remember",
+        artist: "Roa",
+        img: "music-6",
+        src: "music-6"
+    },
+    {
+        name: "Counting the Hours",
+        artist: "Tomas Skyldeberg",
+        img: "music-7",
+        src: "music-7"
+    },
+];
 
 
-
-let musicIndex = 2;
+let musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
+isMusicPaused = true;
+// let musicIndex = 2;
 
 window.addEventListener("load", ()=>{
     loadMusic(musicIndex);
-    // playingNow();
+    playingNow();
 })
 
 function loadMusic(indexNumb){
@@ -52,6 +98,7 @@ function prevMusic(){
     musicIndex < 1 ? musicIndex = allMusic.length :musicIndex = musicIndex;
     loadMusic(musicIndex);
     playMusic();
+    playingNow();
 }
 
 //next msc funct
@@ -61,12 +108,14 @@ function nextMusic(){
     musicIndex > allMusic.length ? musicIndex = 1 : musicIndex = musicIndex;
     loadMusic(musicIndex);
     playMusic();
+    playingNow();
 }
 
 //play pause event
 playPauseBtn.addEventListener("click", ()=>{
     const isMusicPaused = reaper.classList.contains("paused");
     isMusicPaused ? pauseMusic() : playMusic();
+    playingNow();
 })
 
 //next music event//
@@ -166,6 +215,7 @@ mainAudio.addEventListener("ended", ()=>{
             musicIndex = randIndex;
             loadMusic(musicIndex);
             playMusic();
+            playingNow();
             break;
     }
 });
@@ -173,67 +223,69 @@ mainAudio.addEventListener("ended", ()=>{
 
 
 //show menu list
-showMoreBtn.addEventListener("click", ()=>{
+moreMusicBtn.addEventListener("click", ()=>{
     musicList.classList.toggle("show");
 });
-hideMusicBtn.addEventListener("click", ()=>{
-    showMoreBtn.click();
+closemoreMusic.addEventListener("click", ()=>{
+    moreMusicBtn.click();
 });
 
 
-// const ulTag = reaper.querySelector("ul");
+const ulTag = reaper.querySelector("ul");
 
-// for (let i = 0; i < allMusic.length; i++) {
-//     let liTag = `<li li-index="${i + 1}">
-//                     <div class="row">
-//                     <span>${allMusic[i].name}</span>
-//                     <p>${allMusic[i].artist}</p>
-//                     </div>
-//                     <span id="${allMusic[i].src}" class="audio-duration">3:40</span>
-//                     <audio class="${allMusic[i].src}" src="songs/${allMusic[i].src}.mp3"></audio>
-//                 </li>`;
-//     ulTag.insertAdjacentHTML("beforeend", liTag);
+for (let i = 0; i < allMusic.length; i++) {
+    let liTag = `<li li-index="${i + 1}">
+                    <div class="row">
+                    <span>${allMusic[i].name}</span>
+                    <p>${allMusic[i].artist}</p>
+                    </div>
+                    <audio class="${allMusic[i].src}" src="songs/${allMusic[i].src}.mp3"></audio>
+                    <span id="${allMusic[i].src}" class="audio-duration">3:40</span>
+                </li>`;
+    ulTag.insertAdjacentHTML("beforeend",liTag);
 
-//   let liAudioDurationTag = ulTag.querySelector(`#${allMusic[i].src}`);
-//   let liAudioTag = ulTag.querySelector(`.${allMusic[i].src}`);
+  let liAudioDurationTag = ulTag.querySelector(`#${allMusic[i].src}`);
+  let liAudioTag = ulTag.querySelector(`.${allMusic[i].src}`);
 
-//   liAudioTag.addEventListener("loadeddata", ()=>{
-//     let duration = liAudioTag.duration;
-//     let totalMin = Math.floor(duration / 60);
-//     let totalSec = Math.floor(duration % 60);
-//     if(totalSec < 10){
-//         totalSec = `0${totalSec}`;
-//     };
+  liAudioTag.addEventListener("loadeddata", ()=>{
+    let duration = liAudioTag.duration;
+    let totalMin = Math.floor(duration / 60);
+    let totalSec = Math.floor(duration % 60);
+    if(totalSec < 10){
+        totalSec = `0${totalSec}`;
+    };
 
-//     liAudioDurationTag.innerText = `${totalMin}:${totalSec}`;
-//     liAudioDurationTag.setAttribute ("t-duration", `${totalMin}:${totalSec}`);
-//   });
-// };
+    liAudioDurationTag.innerText = `${totalMin}:${totalSec}`;
+    liAudioDurationTag.setAttribute ("t-duration", `${totalMin}:${totalSec}`);
+  });
+};
 
-// //playing list
-// const allLitags = ulTag.querySelectorAll("li");
-// function playingNow(){
+//playing list on click
+const allLitags = ulTag.querySelectorAll("li");
+
+function playingNow(){
    
-//     for (let j = 0; j < allLitags.length; j++) {
-//         let audioTag = allLitags[j].querySelector("audio-duration");
-//         if(allLitags[j].classList.contains("playing")){
-//             allLitags[j].classList.remove("playing");
-//             let adDuration = audioTag.getAttribute("t-duration");
-//             audioTag.innerText = adDuration;
-//         }
-//         if(allLitags[j].getAttribute("li-index") == musicIndex){
-//             allLitags[j].classList.add("playing");
-//             audioTag.innerText = "playing";
-//         }
-//         allLitags [j].setAttribute("onclick", "clicked(this)");
-//     }
-// }
+    for (let j = 0; j < allLitags.length; j++) {
+        let audioTag = allLitags[j].querySelector(".audio-duration");
+        if(allLitags[j].classList.contains("playing")){
+            allLitags[j].classList.remove("playing");
+
+            let adDuration = audioTag.getAttribute("t-duration");
+            audioTag.innerText = adDuration;
+        }
+        if(allLitags[j].getAttribute("li-index") == musicIndex){
+            allLitags[j].classList.add("playing");
+            audioTag.innerText = "playing";
+        }
+        allLitags [j].setAttribute("onclick", "clicked(this)");
+    }
+}
 
 // //playing function
-// function clicked(element){
-//     let getLiIndex = element.getAttribute("li-index");
-//     musicIndex = getLiIndex;
-//     loadMusic(musicIndex);
-//     playMusic();
-//     playingNow();
-// }
+function clicked(element){
+    let getLiIndex = element.getAttribute("li-index");
+    musicIndex = getLiIndex;
+    loadMusic(musicIndex);
+    playMusic();
+    playingNow();
+}

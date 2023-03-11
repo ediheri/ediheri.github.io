@@ -446,7 +446,7 @@
             <div class="reaper">
               <div class="top-bar">
                 <i class="material-icons">expand_more</i>
-                <span>now playing</span>
+                <span>Now Playing</span>
                 <i class="material-icons">more_horiz</i>
               </div>
               <div class="img-area">
@@ -459,8 +459,8 @@
               <div class="progress-area">
                 <div class="progress-bar"></div>
                 <div class="song-timer">
-                  <span class="current">0:20</span>
-                  <span class="duration"></span>
+                  <span class="current">0:00</span>
+                  <span class="duration">0:00</span>
                 </div>
                 <audio id="main-audio" src=""></audio>
               </div>
@@ -600,10 +600,10 @@
                   </div>
                 </li>
                 <div class="details">
-                  <p class="time">
+                  <p id="pipi" class="time">
                     Time: <span><b>20</b>s</span>
                   </p>
-                  <p class="flips">
+                  <p id="pipi" class="flips">
                     Flips: <span><b>0</b></span>
                   </p>
                   <button>Refresh</button>
@@ -775,9 +775,6 @@
                   >
                     <i class="fab fa-linkedin"></i>
                   </a>
-                  <a href="wwww.twitter.com" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                  </a>
                 </div>
               </div>
             </div>
@@ -839,7 +836,13 @@
         </div>
       </section>
       <!--end of contact-->
-      <footer>&copy; 2023 Edi Heryanto</footer>
+      <!-- <footer>&copy; 2023 Edi Heryanto</footer> -->
+      <footer>
+        <span>
+          Made with &#10084;&#65039; by <a href="#"> Edi Heryanto</a> | &#169;
+          2023</span
+        >
+      </footer>
     </main>
     <!--controller-->
     <div class="controlls">
@@ -868,7 +871,6 @@
     <script src="js/app.js"></script>
     <script src="js/video.js"></script>
     <script src="js/playermusic.js"></script>
-    <script src="js/music-list.js"></script>
     <script src="js/card-games.js"></script>
     <script src="js/form.js"></script>
     <script src="js/editorphoto.js"></script>
