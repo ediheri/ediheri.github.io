@@ -313,7 +313,7 @@ section{
             .progress-con{
                 display: flex;
                 align-items: center;
-                .prog-text{
+                .prog.text{
                     color: var(--color-grey-2);
                 }
                 .progress{
@@ -336,7 +336,7 @@ section{
                         width: 90%;
                     }
                     .css{
-                        width: 75%;
+                        width: 92%;
                     }
                     .js{
                         width: 65%;
@@ -344,11 +344,14 @@ section{
                     .python{
                         width: 55%;
                     }
+                    .php{
+                        width: 63%;
+                    }
                     .photoshop{
-                        width: 95%;
+                        width: 82%;
                     }
                     .illustrator{
-                        width: 92%;
+                        width: 84%;
                     }
                     .premierepro{
                         width: 62%;
@@ -553,6 +556,7 @@ section{
             text-transform: uppercase;
         }
         p{
+            color: var(--color-grey-2);
             margin: 1rem 0;
             line-height: 2rem;
         }
@@ -571,9 +575,13 @@ section{
                     display: grid;
                     grid-template-columns: 40px 1fr;
                     i{
+                        color: var(--color-white);
                         display: flex;
                         align-items: center;
                         font-size: 1.2rem;
+                        &:hover{
+                            color: var(--color-grey-2);
+                        }
                     }
                 }
             }

@@ -1222,7 +1222,7 @@ section {
   display: flex;
   align-items: center;
 }
-.about-stats .progress-bars .progress-bar .progress-con .prog-text {
+.about-stats .progress-bars .progress-bar .progress-con .prog.text {
   color: var(--color-grey-2);
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress {
@@ -1245,7 +1245,7 @@ section {
   width: 90%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .css {
-  width: 75%;
+  width: 92%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .js {
   width: 65%;
@@ -1253,11 +1253,14 @@ section {
 .about-stats .progress-bars .progress-bar .progress-con .progress .python {
   width: 55%;
 }
+.about-stats .progress-bars .progress-bar .progress-con .progress .php {
+  width: 63%;
+}
 .about-stats .progress-bars .progress-bar .progress-con .progress .photoshop {
-  width: 95%;
+  width: 82%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .illustrator {
-  width: 92%;
+  width: 84%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .premierepro {
   width: 62%;
@@ -1383,6 +1386,7 @@ section {
   text-transform: uppercase;
 }
 .contact-content-con .left-contact p {
+  color: var(--color-grey-2);
   margin: 1rem 0;
   line-height: 2rem;
 }
@@ -1402,9 +1406,13 @@ section {
   grid-template-columns: 40px 1fr;
 }
 .contact-content-con .left-contact .contact-info .contact-item .icon i {
+  color: var(--color-white);
   display: flex;
   align-items: center;
   font-size: 1.2rem;
+}
+.contact-content-con .left-contact .contact-info .contact-item .icon i:hover {
+  color: var(--color-grey-2);
 }
 .contact-content-con .left-contact .contact-icon {
   display: flex;
