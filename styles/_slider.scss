@@ -68,14 +68,19 @@ html {
 .section-heading{
     font-size: 2rem;
     color: var(--primary);
-    padding: 2rem 0;
+    padding: 1rem 0;
+}
+@media (max-width: 1440px){
+    .section-heading{
+        font-size: 1.5rem;
+    }
 }
 #tranding{
     padding: 4rem 0;
 }
 @media (max-width: 1440px){
     #tranding{
-        padding: 7rem 0;
+        padding: 2rem 0;
     }
 }
 #tranding .tranding-slider{
@@ -85,7 +90,7 @@ html {
 }
 @media (max-width: 500px){
     #tranding .tranding-slider{
-        height: 45rem;
+        height: 32rem;
     }
 }
 .tranding-slide{
@@ -95,12 +100,22 @@ html {
 }
 @media (max-width: 500px){
     .tranding-slide{
-        width: 28rem !important;
-        height: 36rem !important;
+        width: 15rem !important;
+        height: 23rem !important;
     }
     .tranding-slide .tranding-slide-img img{
-        width: 28rem !important;
-        height: 36rem !important;
+        width: 15rem !important;
+        height: 23rem !important;
+    }
+}
+@media (max-width: 990px){
+    .tranding-slide{
+        width: 28rem;
+        height: 36rem;
+    }
+    .tranding-slide .tranding-slide-img img{
+        width: 28rem;
+        height: 36rem;
     }
 }
 .tranding-slide .tranding-slide-img img{
@@ -122,6 +137,7 @@ html {
     right: 2rem;
     color: var(--white);
 }
+
 .tranding-slide-content .tranding-slide-content-bottom{
     position: absolute;
     bottom: 2rem;
@@ -148,8 +164,8 @@ html {
     justify-content: center;
 }
 .tranding-slider-control .swiper-button-next{
-    left: 58% !important;
-    transform: translate(-58%) !important;
+    left: 75% !important;
+    transform: translate(-75%) !important;
 }
 @media (max-width: 990px){
     .tranding-slider-control .swiper-button-next{
@@ -165,8 +181,8 @@ html {
 }
 @media (max-width: 9900px){
     .tranding-slider-control .swiper-button-prev{
-        left: 30% !important;
-        transform: translate(-30%) !important;
+        left: 25% !important;
+        transform: translate(-25%) !important;
     }
 }
 @media (max-width: 450px){
@@ -194,7 +210,7 @@ html {
 .tranding-slider-control .swiper-pagination{
     position: relative;
     width: 15rem;
-    bottom: 1rem;
+    bottom: 3rem;
 }
 .tranding-slider-control .swiper-pagination .swiper-pagination-bullet{
     filter: drop-shadow(0px 8px 24px rgba(8, 28, 53, 0.1));
