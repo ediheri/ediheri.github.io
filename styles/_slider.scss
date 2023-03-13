@@ -76,11 +76,11 @@ html {
     }
 }
 #tranding{
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 @media (max-width: 1440px){
     #tranding{
-        padding: 2rem 0;
+        padding: 1rem 0;
     }
 }
 #tranding .tranding-slider{
@@ -98,16 +98,6 @@ html {
     height: 42rem;
     position: relative;
 }
-@media (max-width: 500px){
-    .tranding-slide{
-        width: 15rem !important;
-        height: 23rem !important;
-    }
-    .tranding-slide .tranding-slide-img img{
-        width: 15rem !important;
-        height: 23rem !important;
-    }
-}
 @media (max-width: 990px){
     .tranding-slide{
         width: 28rem;
@@ -118,6 +108,17 @@ html {
         height: 36rem;
     }
 }
+@media (max-width: 500px){
+    .tranding-slide{
+        width: 15rem !important;
+        height: 23rem !important;
+    }
+    .tranding-slide .tranding-slide-img img{
+        width: 15rem !important;
+        height: 23rem !important;
+    }
+}
+
 .tranding-slide .tranding-slide-img img{
     width: 37rem;
     height: 42rem;
