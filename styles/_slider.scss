@@ -10,6 +10,36 @@
 //   text-decoration: none;
 // }
 
+:root{
+    --color-primary: #191d2b;
+    --color-secondary: #279aae;
+    --color-white: #FFFFFF;
+    --color-black: #000;
+    --color-grey-0: #f8f8f8;
+    --color-grey-1: #dbe1e8;
+    --color-grey-2: #b2becd;
+    --color-grey-3: #6c7983;
+    --color-grey-4: #454e56;
+    --color-grey-5: #2a2e35;
+    --color-grey-6: #12181b;
+    --br-sm-2:14px;
+    --box-shadow-1: 0 3px 15px rgba(0,0,0, .2);
+}
+
+//ligt mode setup//
+.light-mode{
+    --color-primary: #ffffff;
+    --color-secondary: #aea027;
+    --color-white: #454e56;
+    --color-black: #000;
+    --color-grey-0: #f8f8f8;
+    --color-grey-1: #dbe1e8;
+    --color-grey-2: #b2becd;
+    --color-grey-3: #6c7983;
+    --color-grey-4: #454e56;
+    --color-grey-5: #2a2e35;
+    --color-grey-6: #12181b;
+}
 :root {
   --primary: #ec994b;
   --white: #ffffff;
@@ -67,7 +97,7 @@ html {
 }
 .section-heading{
     font-size: 2rem;
-    color: var(--primary);
+    color: var(--color-secondary);
     padding: 1rem 0;
 }
 @media (max-width: 1440px){
