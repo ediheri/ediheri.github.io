@@ -84,6 +84,11 @@
   color: #444;
 }
 
+@media (max-width: 1200px) {
+  .kontaner {
+    margin: 0;
+  }
+}
 @media (max-width: 450px) {
   .kontaner .main-video-container .main-vid-title {
     font-size: 15px;
