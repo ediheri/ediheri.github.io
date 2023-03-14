@@ -1,0 +1,94 @@
+.kontaner{
+    max-width: 1200px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+}
+.kontaner .main-video-container{
+    flex: 1 1 500px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background: #fff;
+    padding: 15px;
+}
+.kontaner .main-video-container .main-video{
+    margin-bottom: 7px;
+    border-radius: 5px;
+    width: 100%;
+}
+.kontaner .main-video-container .main-vid-title{
+    font-size: 20px;
+    color: #444;
+}
+.kontaner .video-list-container{
+    flex: 1 1 250px;
+    height: 380px;
+    overflow-y: scroll;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background: #fff;
+    padding: 15px;
+}
+.kontaner .video-list-container::-webkit-scrollbar{
+    width: 10px;
+}
+.kontaner .video-list-container::-webkit-scrollbar-track{
+    background-color: #fff;
+    border-radius: 5px;
+}
+.kontaner .video-list-container::-webkit-scrollbar-thumb{
+    background-color: #444;
+    border-radius: 5px;
+}
+.kontaner .video-list-container .list{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    background-color: #eee;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.kontaner .video-list-container .list:last-child{
+    margin-bottom: 0;
+}
+.kontaner .video-list-container .list.active{
+    background-color: #444;
+}
+.kontaner .video-list-container .list.active .list-title{
+    color: #fff;
+}
+.kontaner .video-list-container .list .list-video{
+    width: 100px;
+    border-radius: 5px;
+}
+.kontaner .video-list-container .list .list-title{
+    font-size: 17px;
+    color: #444;
+}
+
+// @media (max-width: 1200px){
+//     .kontaner{
+//         margin: 0;
+//     }
+// }
+@media (max-width: 450px){
+    .kontaner .main-video-container .main-vid-title{
+        font-size: 15px;
+        text-align: center;
+    }
+    .kontaner .video-list-container .list{
+        flex-flow: column;
+        gap: 10px;
+    }
+    .kontaner .video-list-container .list .list-video{
+        width: 100%;
+    }
+    .kontaner .video-list-container .list .list-title{
+        font-size: 15px;
+        text-align: center;
+    }
+}
