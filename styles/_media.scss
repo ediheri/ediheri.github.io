@@ -243,6 +243,8 @@
         transform: translateX(-50%);
         width: 100%;
         background-color: var(--color-grey-5);
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
         .control{
             margin: .6rem 1rem !important;
         }

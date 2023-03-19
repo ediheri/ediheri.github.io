@@ -1,24 +1,4 @@
-:root{
-    --color-primary: #191d2b;
-    --color-secondary: #279aae;
-    --color-white: #FFFFFF;
-    --color-black: #000;
-    --color-grey-0: #f8f8f8;
-    --color-grey-1: #dbe1e8;
-    --color-grey-2: #b2becd;
-    --color-grey-3: #6c7983;
-    --color-grey-4: #454e56;
-    --color-grey-5: #2a2e35;
-    --color-grey-6: #12181b;
-    --br-sm-2:14px;
-    --box-shadow-1: 0 3px 15px rgba(0,0,0, .2);
-}
-// .progress_container{
-//     max-width: 1140px;
-//     width: calc(100% - 2rem);
-//     padding: 0 1rem;
-//     margin: 0 auto;
-// }
+
 .progressive{
     // height: 100vh;
     display: grid;
@@ -30,8 +10,7 @@
 @media (max-width: 1024px){
     .progressive{
         grid-template-columns: 100%;
-        max-width: 500px;
-        margin: 0;
+        grid-gap: 0.5rem;
     }
 }
 .progress_item{
@@ -41,6 +20,11 @@
     color: var(--color-white);
     padding: 1rem 0;
 }
+@media (max-width: 1024px){
+    .progress_title{
+        font-size: 1rem;
+    }
+}
 .progress_bar{
     position: relative;
     width: 100%;
@@ -48,24 +32,24 @@
     border-radius: 6px;
     background: rgba(222, 222, 222)
 }
-// @media (max-width: 768){
-//     .progress_bar{
-//         width: 25px;
-//     }
-// }
-// @media (max-width: 440){
-//     .progress_bar{
-//         width: 300px;
-//     }
-// }
-// @media (max-width: 340){
-//     .progress_bar{
-//         width: 280px;
-//     }
-// }
+@media (max-width: 768){
+    .progress_bar{
+        width: 25px;
+    }
+}
+@media (max-width: 440){
+    .progress_bar{
+        width: 300px;
+    }
+}
+@media (max-width: 340){
+    .progress_bar{
+        width: 280px;
+    }
+}
 .bar{
     border-radius: inherit;
-    background: linear-gradient(90deg, #279aae, #37b6cc, #065866);
+    background: var(--bar-bar-1);
     position: absolute;
     transition: width 1.5s cubic-bezier(0.1, 0.42, 0.85, 1);
     width: 0;
@@ -77,9 +61,9 @@
     position: absolute;
     right: 0;
     top: -3rem;
-    width: 4rem;
+    width: 3rem;
     height: 2rem;
-    background: rgb(41, 61, 102);
+    background: var(--bar-bar-2);
     font-size: 18px;
     line-height: 2rem;
     color: var(--color-white);
@@ -96,7 +80,7 @@
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-top: 10px solid rgb(41, 61, 102);
+    border-top: 10px solid var(--bar-bar-2);
     animation: text 0.6s ease-in-out;
 }
 @keyframes text {
