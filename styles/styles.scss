@@ -871,11 +871,11 @@ form .button-area{
             top: 50%;
             left: 50%;
             color: var(--color-grey-5);
-            transition: all .4s ease-in-out;
+            transition: all 0.4s ease-in-out;
             z-index: -1;
             transform: translate(-50%, -50%);
             font-weight: 800;
-            font-size: 5rem;
+            font-size: 5.5rem;
         }
     }
 }

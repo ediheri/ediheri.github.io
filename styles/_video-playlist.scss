@@ -10,7 +10,7 @@
     flex: 1 1 500px;
     border-radius: 5px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    background: #fff;
+    background: var(--color-secondary);
     padding: 15px;
 }
 .kontaner .main-video-container .main-video{
@@ -28,14 +28,14 @@
     overflow-y: scroll;
     border-radius: 5px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    background: #fff;
+    background: var(--color-secondary);
     padding: 15px;
 }
 .kontaner .video-list-container::-webkit-scrollbar{
     width: 10px;
 }
 .kontaner .video-list-container::-webkit-scrollbar-track{
-    background-color: #fff;
+    background-color: var(--color-grey-0);
     border-radius: 5px;
 }
 .kontaner .video-list-container::-webkit-scrollbar-thumb{
@@ -47,7 +47,7 @@
     align-items: center;
     gap: 15px;
     padding: 10px;
-    background-color: #eee;
+    background-color: var(--color-grey-0);
     cursor: pointer;
     border-radius: 5px;
     margin-bottom: 10px;

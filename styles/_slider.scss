@@ -183,7 +183,7 @@ html {
     }
 }
 .tranding-slider-control .slider-arrow{
-    background: var(--white);
+    background: var(--color-secondary);
     width: 3.5rem;
     height: 3.5rem;
     border-radius: 50%;
@@ -207,5 +207,5 @@ html {
     filter: drop-shadow(0px 8px 24px rgba(8, 28, 53, 0.1));
 }
 .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active{
-    background: var(--primary);
+    background: var(--color-secondary);
 }
