@@ -162,7 +162,7 @@ html {
 
 @media (max-width: 1440px) {
   #tranding {
-    padding: 7rem 0;
+    padding: 0.5rem 0;
   }
 }
 #tranding .tranding-slider {
@@ -1098,7 +1098,7 @@ html[theme=dark] {
   --color-grey-5: #2a2e35;
   --color-grey-6: #12181b;
   --bar-bar-1: linear-gradient(90deg, #279aae, #37b6cc, #065866);
-  --bar-bar-2: rgb(65, 90, 141);
+  --bar-bar-2: rgb(44, 82, 94);
 }
 
 body {
@@ -1134,7 +1134,7 @@ section {
 
 .section {
   transform: translateY(-100%) scale(0);
-  transition: all 4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   background-color: var(--color-primary);
 }
 
@@ -1165,15 +1165,6 @@ section {
 
 .active {
   display: block;
-  animation: scaleAnim 1s ease-in-out;
-}
-@keyframes scaleAnim {
-  0% {
-    transform: translateY(-100%) scaleY(0);
-  }
-  100% {
-    transform: translateY(0) scaleY(1);
-  }
 }
 
 .controlls {
@@ -1445,7 +1436,7 @@ section {
 }
 
 .port-text {
-  padding: 2rem 0;
+  padding: 4rem 0;
   text-align: center;
   color: var(--color-grey-2);
 }
@@ -1894,7 +1885,7 @@ form .button-area {
   z-index: -1;
   transform: translate(-50%, -50%);
   font-weight: 800;
-  font-size: 6.3rem;
+  font-size: 5rem;
 }
 
 footer {

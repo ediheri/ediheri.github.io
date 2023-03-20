@@ -38,8 +38,8 @@ function pageTransitions() {
 pageTransitions();
 
 //theme
-let themeToggle = document.querySelector(".theme_toggle");
-let themeToggleIcon = document.querySelector(".theme_toggle ion-icon");
+let themeToggle = document.querySelector(".theme-btn");
+let themeToggleIcon = document.querySelector(".theme-btn ion-icon");
 // let themeName = document.querySelector(".theme_toggle .theme-btn");
 let getTheme = localStorage.getItem("theme");
 
