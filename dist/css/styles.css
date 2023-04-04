@@ -1613,8 +1613,8 @@ form .message textarea:focus {
 
 .ruper form i {
   position: absolute;
-  left: 18px;
-  top: 50%;
+  left: 10px;
+  top: 40%;
   color: var(--color-grey-2);
   font-size: 17px;
   pointer-events: none;
