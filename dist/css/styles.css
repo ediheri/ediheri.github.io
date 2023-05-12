@@ -675,8 +675,7 @@ ul li.playing {
   position: absolute;
   background: var(--color-grey-2);
   border-radius: 7px;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transition: transform 0.25s linear;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
