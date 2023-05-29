@@ -478,43 +478,45 @@ section{
     display: flex;
     padding-top: 3.5rem;
     .left-contact{
-        flex: 2;
+        // flex: 2;
         h4{
             margin-top: 1rem;
             font-size: 2rem;
             text-transform: uppercase;
         }
-        p{
-            color: var(--color-grey-2);
-            margin: 1rem 0;
-            line-height: 2rem;
-        }
         .contact-info{
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
             .contact-item{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                p{
-                    color: var(--color-grey-2);
-                    margin: .3rem 0 !important;
-                    padding: 0 !important;
-                }
-                .icon{
-                    color: var(--color-grey-2);
-                    display: grid;
-                    grid-template-columns: 40px 1fr;
+                background: var(--color-grey-5);
+                padding: 1.2rem;
+                border-radius: 1.2rem;
+                text-align: center;
+                border: 1px solid transparent;
                     i{
-                        color: var(--color-white);
-                        display: flex;
-                        align-items: center;
-                        font-size: 1.2rem;
-                        &:hover{
-                            color: var(--color-grey-2);
+                        font-size: 1.5rem;
+                        margin-bottom: 0.5rem;
                         }
                     }
-                }
+            }
+            .contact-item:hover{
+                background: transparent;
+                border-color: var(--color-white);
+            }
+            .contact-item a{
+                    margin-top: 0.7rem;
+                    display: inline-block;
+                    font-size: 0.8rem;
+                    color: var(--color-secondary);
+                    transition: all 400ms ease;
+                    &:hover{
+                        color: var(--color-black);
+                    }
             }
         }
+
+
         .contact-icon{
             display: flex;
             margin-top: 2rem;
@@ -545,135 +547,171 @@ section{
             }
         }
     }
-}
+
 
 //right contact section for form updated
 .right-contact{
-    display: flex;
-    flex: 3;
+    // display: flex;
+    // flex: 3;
     margin-left: 3rem;
 }
 .ruper{
-    // width: 500px;
+    width: 400px;
     // background: #6c7983;
     border-radius: 5px;
 }
-@media(max-width: 750px){
-    .ruper{
-        width: none;
-    }
-}
 .ruper .hadir{
-    margin-top: 1rem;
+    margin-top: 3rem;
     font-size: 1.5rem;
     text-transform: uppercase;
     border-bottom: 1px solid var(--color-secondary);
 }
-.ruper form{
-    margin: 1.5rem 0;
+// .ruper form{
+//     margin: 1.5rem 0;
+// }
+// form .dbl-field{
+//     // display: grid;
+//     display: flex;
+//     // grid-template-columns: repeat(2, 1fr);
+//     flex-direction: column;
+//     gap: 1.2rem;
+//     margin-bottom: 20px;
+// }
+// .dbl-field .field{
+//     height: 50px;
+//     position: relative;
+// }
+// form .field input,
+// form .message textarea{
+//     color: var(--color-grey-2);
+//     outline: none;
+//     padding: 0rem 8rem;
+//     border-radius: 15px;
+//     background-color: var(--color-grey-5);
+//     border: 1px solid var(--color-secondary);
+// }
+// form .field input::placeholder,
+// form .message textarea::placeholder{
+//     color: var(--color-grey-2);
+// }
+// form .field input:focus,
+// form .message textarea:focus{
+//     border: 2px solid var(--color-secondary);
+// }
+// .ruper form i{
+//     position: absolute;
+//     left: 10px;
+//     top: 40%;
+//     color: var(--color-grey-2);
+//     font-size: 17px;
+//     pointer-events: none;
+//     transform: translateY(-50%);
+// }
+// form, .field input:focus ~ i{
+//     color: var(--color-grey-0);
+// }
+// form .message{
+//     position: relative;
+// }
+// form .message i{
+//     top: 30px;
+//     font-size: 20px;
+// }
+// form .message textarea{
+//     color: var(--color-grey-2);
+//     min-width: 100%;
+//     max-width: 100%;
+//     min-height: 130px;
+//     max-height: 300px;
+//     padding: 15px 20px 0 48px;
+// }
+// form .button-area{
+//     margin: 25px 0;
+//     display: flex;
+//     align-items: center;
+// }
+// .button-area button{
+//     font-size: 15px;
+//     border: none;
+//     color: var(--color-grey-2);
+//     cursor: pointer;
+//     border-radius: 15px;
+//     background: var(--color-secondary);
+//     padding: 13px 25px;
+// }
+// .button-area span{
+//     color: var(--color-secondary);
+//     margin-left: 30px;
+// }
+// @media(max-width: 750px){
+//     form .dbl-field{
+//         margin-bottom: 0px;
+//         flex-direction: column;
+//     }
+//     .dbl-field .field{
+//         width: 100%;
+//         margin-bottom: 20px;
+//     }
+//     form .message textarea{
+//         resize: none;
+//     }
+//     form .button-area{
+//         flex-direction: column;
+//     }
+//     .button-area button{
+//         width: 100%;
+//     }
+//     .button-area span{
+//         text-align: center;
+//         margin: 20px 0;
+//     }
+
+// }
+/* == form == */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
 }
-form .dbl-field{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
-    margin-bottom: 20px;
-}
-@media(max-width: 750px){
-    form .dbl-field{
-        display: flex;
-        gap: 0;
-    }
-}
-.dbl-field .field{
-    height: 50px;
-    position: relative;
-    width: calc(100% / 2 - 13px);
-}
-form .field input,
-form .message textarea{
-    color: var(--color-grey-2);
-    outline: none;
-    padding: .8rem 2rem;
-    border-radius: 15px;
-    background-color: var(--color-grey-5);
-    border: 1px solid var(--color-secondary);
-}
-form .field input::placeholder,
-form .message textarea::placeholder{
-    color: var(--color-grey-2);
-}
-form .field input:focus,
-form .message textarea:focus{
+input, textarea{
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
     border: 2px solid var(--color-secondary);
-}
-.ruper form i{
-    position: absolute;
-    left: 10px;
-    top: 40%;
-    color: var(--color-grey-2);
-    font-size: 17px;
-    pointer-events: none;
-    transform: translateY(-50%);
-}
-form, .field input:focus ~ i{
+    resize: none;
     color: var(--color-grey-0);
 }
-form .message{
-    position: relative;
-}
-form .message i{
-    top: 30px;
-    font-size: 20px;
-}
-form .message textarea{
-    color: var(--color-grey-2);
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 130px;
-    max-height: 300px;
-    padding: 15px 20px 0 48px;
-}
-form .button-area{
-    margin: 25px 0;
-    display: flex;
-    align-items: center;
-}
-.button-area button{
-    font-size: 15px;
-    border: none;
-    color: var(--color-grey-2);
-    cursor: pointer;
-    border-radius: 15px;
+.btn-primary {
     background: var(--color-secondary);
-    padding: 13px 25px;
+    color: var(--color-primary);
 }
-.button-area span{
-    color: var(--color-secondary);
-    margin-left: 30px;
+.btn {
+    width: max-content;
+    display: inline-block;
+    color: var(--color-grey-0);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-grey-0);
+    transition: all 400ms ease;
 }
-@media(max-width: 750px){
-    form .dbl-field{
-        margin-bottom: 0px;
-        flex-direction: column;
-    }
-    .dbl-field .field{
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    form .message textarea{
-        resize: none;
-    }
-    form .button-area{
-        flex-direction: column;
-    }
-    .button-area button{
-        width: 100%;
-    }
-    .button-area span{
-        text-align: center;
-        margin: 20px 0;
-    }
+.btn-primary:hover{
+    background-color: var(--color-grey-0);
+    color: var(--color-black);
+}
 
+@media screen and (max-width: 1024px){
+    input, textarea{
+        width: 160%;
+    }
+   
+}
+@media screen and (max-width: 600px){
+    input, textarea{
+        width: 90%;
+    }
+   
 }
 
 

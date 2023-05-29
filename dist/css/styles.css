@@ -1474,48 +1474,46 @@ section {
   display: flex;
   padding-top: 3.5rem;
 }
-.contact-content-con .left-contact {
-  flex: 2;
-}
 .contact-content-con .left-contact h4 {
   margin-top: 1rem;
   font-size: 2rem;
   text-transform: uppercase;
 }
-.contact-content-con .left-contact p {
-  color: var(--color-grey-2);
-  margin: 1rem 0;
-  line-height: 2rem;
+.contact-content-con .left-contact .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 .contact-content-con .left-contact .contact-info .contact-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  background: var(--color-grey-5);
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid transparent;
 }
-.contact-content-con .left-contact .contact-info .contact-item p {
-  color: var(--color-grey-2);
-  margin: 0.3rem 0 !important;
-  padding: 0 !important;
+.contact-content-con .left-contact .contact-info .contact-item i {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
-.contact-content-con .left-contact .contact-info .contact-item .icon {
-  color: var(--color-grey-2);
-  display: grid;
-  grid-template-columns: 40px 1fr;
+.contact-content-con .left-contact .contact-item:hover {
+  background: transparent;
+  border-color: var(--color-white);
 }
-.contact-content-con .left-contact .contact-info .contact-item .icon i {
-  color: var(--color-white);
-  display: flex;
-  align-items: center;
-  font-size: 1.2rem;
+.contact-content-con .left-contact .contact-item a {
+  margin-top: 0.7rem;
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--color-secondary);
+  transition: all 400ms ease;
 }
-.contact-content-con .left-contact .contact-info .contact-item .icon i:hover {
-  color: var(--color-grey-2);
+.contact-content-con .left-contact .contact-item a:hover {
+  color: var(--color-black);
 }
-.contact-content-con .left-contact .contact-icon {
+.contact-content-con .contact-icon {
   display: flex;
   margin-top: 2rem;
 }
-.contact-content-con .left-contact .contact-icon a {
+.contact-content-con .contact-icon a {
   display: flex;
   align-items: center;
   color: var(--color-white);
@@ -1528,13 +1526,13 @@ section {
   margin: 0 0.4rem;
   transition: all 0.4s ease-in-out;
 }
-.contact-content-con .left-contact .contact-icon a:hover {
+.contact-content-con .contact-icon a:hover {
   background-color: var(--color-secondary);
 }
-.contact-content-con .left-contact .contact-icon a:hover i {
+.contact-content-con .contact-icon a:hover i {
   color: var(--color-primary);
 }
-.contact-content-con .left-contact .contact-icon a i {
+.contact-content-con .contact-icon a i {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1542,148 +1540,68 @@ section {
 }
 
 .right-contact {
-  display: flex;
-  flex: 3;
   margin-left: 3rem;
 }
 
 .ruper {
+  width: 400px;
   border-radius: 5px;
 }
 
-@media (max-width: 750px) {
-  .ruper {
-    width: none;
-  }
-}
 .ruper .hadir {
-  margin-top: 1rem;
+  margin-top: 3rem;
   font-size: 1.5rem;
   text-transform: uppercase;
   border-bottom: 1px solid var(--color-secondary);
 }
 
-.ruper form {
-  margin: 1.5rem 0;
+/* == form == */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
-form .dbl-field {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.5rem;
-  margin-bottom: 20px;
-}
-
-@media (max-width: 750px) {
-  form .dbl-field {
-    display: flex;
-    gap: 0;
-  }
-}
-.dbl-field .field {
-  height: 50px;
-  position: relative;
-  width: calc(50% - 13px);
-}
-
-form .field input,
-form .message textarea {
-  color: var(--color-grey-2);
-  outline: none;
-  padding: 0.8rem 2rem;
-  border-radius: 15px;
-  background-color: var(--color-grey-5);
-  border: 1px solid var(--color-secondary);
-}
-
-form .field input::-moz-placeholder, form .message textarea::-moz-placeholder {
-  color: var(--color-grey-2);
-}
-
-form .field input::placeholder,
-form .message textarea::placeholder {
-  color: var(--color-grey-2);
-}
-
-form .field input:focus,
-form .message textarea:focus {
+input, textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
   border: 2px solid var(--color-secondary);
-}
-
-.ruper form i {
-  position: absolute;
-  left: 10px;
-  top: 40%;
-  color: var(--color-grey-2);
-  font-size: 17px;
-  pointer-events: none;
-  transform: translateY(-50%);
-}
-
-form, .field input:focus ~ i {
+  resize: none;
   color: var(--color-grey-0);
 }
 
-form .message {
-  position: relative;
-}
-
-form .message i {
-  top: 30px;
-  font-size: 20px;
-}
-
-form .message textarea {
-  color: var(--color-grey-2);
-  min-width: 100%;
-  max-width: 100%;
-  min-height: 130px;
-  max-height: 300px;
-  padding: 15px 20px 0 48px;
-}
-
-form .button-area {
-  margin: 25px 0;
-  display: flex;
-  align-items: center;
-}
-
-.button-area button {
-  font-size: 15px;
-  border: none;
-  color: var(--color-grey-2);
-  cursor: pointer;
-  border-radius: 15px;
+.btn-primary {
   background: var(--color-secondary);
-  padding: 13px 25px;
+  color: var(--color-primary);
 }
 
-.button-area span {
-  color: var(--color-secondary);
-  margin-left: 30px;
+.btn {
+  width: -moz-max-content;
+  width: max-content;
+  display: inline-block;
+  color: var(--color-grey-0);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-grey-0);
+  transition: all 400ms ease;
 }
 
-@media (max-width: 750px) {
-  form .dbl-field {
-    margin-bottom: 0px;
-    flex-direction: column;
+.btn-primary:hover {
+  background-color: var(--color-grey-0);
+  color: var(--color-black);
+}
+
+@media screen and (max-width: 1024px) {
+  input, textarea {
+    width: 160%;
   }
-  .dbl-field .field {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  form .message textarea {
-    resize: none;
-  }
-  form .button-area {
-    flex-direction: column;
-  }
-  .button-area button {
-    width: 100%;
-  }
-  .button-area span {
-    text-align: center;
-    margin: 20px 0;
+}
+@media screen and (max-width: 600px) {
+  input, textarea {
+    width: 90%;
   }
 }
 .editing-content {

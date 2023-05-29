@@ -45,6 +45,16 @@
       referrerpolicy="no-referrer"
     ></script>
 
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("OZ53JzeSibg58P2v7");
+      })();
+    </script>
+
     <!--<i class="fab fa-instagram"></i>-->
   </head>
   <body class="main-content">
@@ -919,71 +929,56 @@
               <p>Have any questions about me? I'd love to hear from you.</p>
               <div class="contact-info">
                 <!--list cntc-->
-                <div class="contact-item">
-                  <div class="icon">
-                    <a
-                      href="https://goo.gl/maps/mzjWe5xxPajF54NU9"
-                      target="_blank"
-                    >
-                      <i class="fas fa-map-marker-alt"></i>
-                    </a>
-                    Location
-                  </div>
-                  <p>: South Sumatra</p>
-                </div>
-                <!--end of list cntc-->
-                <!--list cntc-->
-                <div class="contact-item">
-                  <div class="icon">
-                    <a href="mailto:ediheryan@gmailcom" target="_blank"
-                      ><i class="fas fa-envelope"></i
-                    ></a>
-                    Email
-                  </div>
-                  <p>: ediheryan@gmail.com</p>
-                </div>
-                <!--end of list cntc-->
-                <!--list cntc-->
-                <div class="contact-item">
-                  <div class="icon">
-                    <a
-                      href="https://goo.gl/maps/wHpQeqZqFGwxHeUHA"
-                      target="_blank"
-                      ><i class="fas fa-atom"></i
-                    ></a>
-
-                    Education
-                  </div>
-                  <p>: Univ. Bina Darma</p>
-                </div>
-                <!--end of list cntc-->
-                <!--list cntc-->
-                <div class="contact-item">
-                  <div class="icon">
-                    <a
-                      href="https://api.whatsapp.com/send?phone=6285290321716"
-                      target="_blank"
-                    >
-                      <i class="fab fa-whatsapp"></i>
-                    </a>
-                    WhatsApp
-                  </div>
-                  <p>: 085290321716</p>
-                </div>
-                <!--end of list cntc-->
-                <!--list cntc-->
-                <div class="contact-item">
-                  <div class="icon">
-                    <a
-                      href="https://en.wikipedia.org/wiki/American_English"
-                      target="_blank"
-                      ><i class="fas fa-language"></i
-                    ></a>
-                    Languages
-                  </div>
-                  <p>: English, Indonesia</p>
-                </div>
-                <!--end of list cntc-->
+                <article class="contact-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <h4>Location</h4>
+                  <h5>South Sumatra</h5>
+                  <a
+                    href="https://googlemaps.com"
+                    target="_blank"
+                    class="linkan"
+                    >view my Place</a
+                  >
+                </article>
+                <article class="contact-item">
+                  <i class="fas fa-envelope"></i>
+                  <h4>Email</h4>
+                  <h5>ediheryan@gmail.com</h5>
+                  <a href="mailto:ediheryan@gmailcom" target="_blank"
+                    >Send Me</a
+                  >
+                </article>
+                <article class="contact-item">
+                  <i class="fas fa-atom"></i>
+                  <h4>Education</h4>
+                  <h5>Univ. Bina Darma</h5>
+                  <a
+                    href="https://goo.gl/maps/wHpQeqZqFGwxHeUHA"
+                    target="_blank"
+                    >View Location</a
+                  >
+                </article>
+                <article class="contact-item">
+                  <i class="fab fa-whatsapp"></i>
+                  <h4>WhatsApp</h4>
+                  <h5>085290321716</h5>
+                  <a
+                    href="https://api.whatsapp.com/send?phone=6285290321716"
+                    target="_blank"
+                    >Chat Me</a
+                  >
+                </article>
+                <article class="contact-item">
+                  <i class="fas fa-language"></i>
+                  <h4>Language</h4>
+                  <h5>English</h5>
+                  <a
+                    href="https://en.wikipedia.org/wiki/American_English"
+                    target="_blank"
+                    >View Description</a
+                  >
+                </article>
+                <!--end of list of contaact-->
               </div>
               <div class="contact-icons">
                 <div class="contact-icon">
@@ -1010,7 +1005,7 @@
             </div>
             <!--right section-->
             <!--working contact form-->
-            <div class="right-contact">
+            <!-- <div class="right-contact">
               <div class="ruper">
                 <div class="hadir">Send Me Your Feedback</div>
                 <form action="https://formspree.io/f/mvonykjz" method="POST">
@@ -1039,15 +1034,8 @@
                       />
                       <i class="fas fa-phone-alt"></i>
                     </div>
-                    <div class="field">
-                      <input
-                        type="text"
-                        name="website"
-                        placeholder="Enter Your Website"
-                      />
-                      <i class="fas fa-globe"></i>
-                    </div>
                   </div>
+
                   <div class="message">
                     <textarea
                       placeholder="write your message"
@@ -1059,6 +1047,38 @@
                     <button type="submit">Send Message</button>
                     <span>Sending Your Message...</span>
                   </div>
+                </form>
+              </div>
+            </div> -->
+
+            <div class="right-contact">
+              <div class="ruper">
+                <div class="hadir">Send Me Your Feedback</div>
+                <form ref="form" @submit.prevent="sendMail">
+                  <input
+                    type="text"
+                    name="name"
+                    id="fullName"
+                    placeholder="Your Name"
+                    required
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    id="email_id"
+                    placeholder="Your Email"
+                    required
+                  />
+                  <textarea
+                    name="message"
+                    rows="7"
+                    id="message"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                  <button onclick="sendMail()" class="btn btn-primary">
+                    Send Message
+                  </button>
                 </form>
               </div>
             </div>
@@ -1117,5 +1137,6 @@
     <script src="js/slider.js"></script>
     <script src="js/video-playlist.js"></script>
     <script src="js/progress-bar.js"></script>
+    <script src="js/form-react.js"></script>
   </body>
 </html>
