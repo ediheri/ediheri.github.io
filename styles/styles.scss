@@ -476,11 +476,11 @@ section{
 //contact section//
 .contact-content-con{
     display: flex;
-    padding-top: 3.5rem;
+    padding-top: 3rem;
     .left-contact{
         // flex: 2;
         h4{
-            margin-top: 1rem;
+            margin-top: 3.5rem;
             font-size: 2rem;
             text-transform: uppercase;
         }
@@ -488,12 +488,14 @@ section{
             display: flex;
             flex-direction: column;
             gap: 1.2rem;
+            margin-top: 2rem;
             .contact-item{
                 background: var(--color-grey-5);
                 padding: 1.2rem;
                 border-radius: 1.2rem;
                 text-align: center;
                 border: 1px solid transparent;
+                width: 100%;
                     i{
                         font-size: 1.5rem;
                         margin-bottom: 0.5rem;
@@ -555,16 +557,19 @@ section{
     // flex: 3;
     margin-left: 3rem;
 }
-.ruper{
-    width: 400px;
+.hadir{
+    // width: 400px;
     // background: #6c7983;
-    border-radius: 5px;
-}
-.ruper .hadir{
     margin-top: 3rem;
-    font-size: 1.5rem;
-    text-transform: uppercase;
+    font-size: 2rem;
     border-bottom: 1px solid var(--color-secondary);
+    text-transform: uppercase;
+}
+.ruper{
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-radius: 5px;
 }
 // .ruper form{
 //     margin: 1.5rem 0;
@@ -680,7 +685,7 @@ input, textarea{
     background: transparent;
     border: 2px solid var(--color-secondary);
     resize: none;
-    color: var(--color-grey-0);
+    color: var(--color-grey-1);
 }
 .btn-primary {
     background: var(--color-secondary);
@@ -702,14 +707,14 @@ input, textarea{
 }
 
 @media screen and (max-width: 1024px){
-    input, textarea{
-        width: 160%;
+    .hadir{
+        font-size: 1.5rem;
     }
    
 }
 @media screen and (max-width: 600px){
-    input, textarea{
-        width: 90%;
+    .hadir{
+        font-size: 1rem;
     }
    
 }

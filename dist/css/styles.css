@@ -1472,10 +1472,10 @@ section {
 
 .contact-content-con {
   display: flex;
-  padding-top: 3.5rem;
+  padding-top: 3rem;
 }
 .contact-content-con .left-contact h4 {
-  margin-top: 1rem;
+  margin-top: 3.5rem;
   font-size: 2rem;
   text-transform: uppercase;
 }
@@ -1483,6 +1483,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  margin-top: 2rem;
 }
 .contact-content-con .left-contact .contact-info .contact-item {
   background: var(--color-grey-5);
@@ -1490,6 +1491,7 @@ section {
   border-radius: 1.2rem;
   text-align: center;
   border: 1px solid transparent;
+  width: 100%;
 }
 .contact-content-con .left-contact .contact-info .contact-item i {
   font-size: 1.5rem;
@@ -1543,16 +1545,18 @@ section {
   margin-left: 3rem;
 }
 
-.ruper {
-  width: 400px;
-  border-radius: 5px;
+.hadir {
+  margin-top: 3rem;
+  font-size: 2rem;
+  border-bottom: 1px solid var(--color-secondary);
+  text-transform: uppercase;
 }
 
-.ruper .hadir {
-  margin-top: 3rem;
-  font-size: 1.5rem;
+.ruper {
+  margin-top: 2rem;
+  font-size: 2rem;
   text-transform: uppercase;
-  border-bottom: 1px solid var(--color-secondary);
+  border-radius: 5px;
 }
 
 /* == form == */
@@ -1569,7 +1573,7 @@ input, textarea {
   background: transparent;
   border: 2px solid var(--color-secondary);
   resize: none;
-  color: var(--color-grey-0);
+  color: var(--color-grey-1);
 }
 
 .btn-primary {
@@ -1595,13 +1599,13 @@ input, textarea {
 }
 
 @media screen and (max-width: 1024px) {
-  input, textarea {
-    width: 160%;
+  .hadir {
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 600px) {
-  input, textarea {
-    width: 90%;
+  .hadir {
+    font-size: 1rem;
   }
 }
 .editing-content {
