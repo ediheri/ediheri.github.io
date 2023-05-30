@@ -569,7 +569,7 @@ section{
 .right-contact{
     // display: flex;
     // flex: 3;
-    margin-left: 3rem;
+    // margin-left: 3rem;
 }
 
 .ruper{
@@ -620,9 +620,11 @@ input, textarea{
     }
    
 }
-// @media screen and (max-width: 600px){
-    
-// }
+@media screen and (max-width: 600px){
+    .contact-content-con{
+        width: 90%;
+    }
+}
 
 
 

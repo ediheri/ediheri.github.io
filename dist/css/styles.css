@@ -1549,10 +1549,6 @@ section {
   text-transform: uppercase;
 }
 
-.right-contact {
-  margin-left: 3rem;
-}
-
 .ruper {
   margin-top: 2rem;
   font-size: 2rem;
@@ -1603,6 +1599,11 @@ input, textarea {
   .contact-content-con {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact-content-con {
+    width: 90%;
   }
 }
 .editing-content {
