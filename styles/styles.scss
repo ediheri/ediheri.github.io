@@ -475,15 +475,10 @@ section{
 
 //contact section//
 .contact-content-con{
-    // display: flex;
-    // padding-top: 2rem;
-
-    // width: 58%;
     display: grid;
     grid-template-columns: 30% 58%;
     gap: 12%;
     .left-contact{
-        // flex: 2;
         h4{
             margin-top: 3.5rem;
             font-size: 2rem;
@@ -514,11 +509,11 @@ section{
             .contact-item a{
                     margin-top: 0.7rem;
                     display: inline-block;
-                    font-size: 0.8rem;
+                    font-size: 1rem;
                     color: var(--color-secondary);
                     transition: all 400ms ease;
                     &:hover{
-                        color: var(--color-black);
+                        color: var(--color-grey-3);
                     }
             }
         }
@@ -566,11 +561,11 @@ section{
 }
 
 //right contact section for form updated
-.right-contact{
-    // display: flex;
-    // flex: 3;
-    // margin-left: 3rem;
-}
+// .right-contact{
+//     // display: flex;
+//     // flex: 3;
+//     // margin-left: 3rem;
+// }
 
 .ruper{
     margin-top: 2rem;

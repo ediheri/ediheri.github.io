@@ -1505,12 +1505,12 @@ section {
 .contact-content-con .left-contact .contact-item a {
   margin-top: 0.7rem;
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: var(--color-secondary);
   transition: all 400ms ease;
 }
 .contact-content-con .left-contact .contact-item a:hover {
-  color: var(--color-black);
+  color: var(--color-grey-3);
 }
 .contact-content-con .contact-icon {
   display: flex;
