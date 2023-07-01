@@ -1009,31 +1009,31 @@
             <div class="right-contact">
               <!-- <h3 class="hadir">Send Me Your Feedback</h3> -->
               <div class="ruper">
-                <form ref="form" @submit.prevent="sendMail">
-                  <input
-                    type="text"
-                    name="name"
-                    id="fullName"
-                    placeholder="Your Name"
-                    required
-                  />
-                  <input
-                    type="email"
-                    name="email"
-                    id="email_id"
-                    placeholder="Your Email"
-                    required
-                  />
+                <form action="" class="contact__form" id="contact-form">
+                  <div class="contact__group">
+                    <input
+                      type="text"
+                      name="user_name"
+                      required
+                      placeholder="Enter Your Name"
+                      class="contact__input"
+                    />
+                    <input
+                      type="email"
+                      name="user_email"
+                      required
+                      placeholder="Enter Your Email"
+                      class="contact__input"
+                    />
+                  </div>
                   <textarea
-                    name="message"
-                    rows="7"
-                    id="message"
-                    placeholder="Your Message"
+                    name="user_project"
                     required
+                    placeholder="Enter Your Message"
+                    class="contact__input"
                   ></textarea>
-                  <button onclick="sendMail()" class="btn btn-primary">
-                    Send Message
-                  </button>
+                  <p class="contact__message" id="contact-message"></p>
+                  <button class="button contact__button">Send Message</button>
                 </form>
               </div>
             </div>
