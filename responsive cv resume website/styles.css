@@ -376,7 +376,7 @@ body.dark-theme{
 
 /* === breakpoints === */
 /*- for small device - */
-@media screen and (max-width: 500px){
+@media screen and (max-width: 350px){
     .container{
         margin-inline: 1rem;
     }
