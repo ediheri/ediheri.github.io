@@ -261,6 +261,9 @@ img{
     font-size: 1.2rem;
     margin-right: .25rem;
 }
+.contact_link{
+    color: var(--text-color);
+}
 .home_button-movi1{
     display: inline-block;
     border: 2px solid var(--text-color);
