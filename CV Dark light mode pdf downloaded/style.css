@@ -37,9 +37,10 @@ html{
     scroll-behavior: smooth;
 }
 
-/*--print on a4 sheet*/
+/*--classes to reduce size and print on A4 sheet*/
 .scale-cv .change-theme,
-.scale-cv .generate-pdf{
+.scale-cv .generate-pdf,
+.scale-cv .paper__button-link{
     display: none;
 }
 .scale-cv .bd-container{
@@ -264,6 +265,9 @@ img{
 .contact_link{
     color: var(--text-color);
 }
+.contact_link:hover{
+    color: var(--title-color);
+}
 .home_button-movi1{
     display: inline-block;
     border: 2px solid var(--text-color);
@@ -374,6 +378,16 @@ img{
 /*=== Certificates ===*/
 .certificate_title{
     font-size: var(--h3-font-size);
+}
+.paper__button-link{
+    width: max-content;
+    color: var(--title-color);
+    display: inline-flex;
+    column-gap: .25rem;
+    font-weight: var(--font-medium);
+}
+.paper__button-link:hover{
+    text-decoration: underline;
 }
 
 /*=== references ===*/
