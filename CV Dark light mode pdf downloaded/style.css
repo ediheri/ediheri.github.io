@@ -445,6 +445,9 @@ img{
     bottom: 5rem;
 }
 
+/* === media queries === */
+
+/* = - for small devices - = */
 @media screen and (max-width: 320px){
     .nav_list{
         grid-template-columns: repeat(2, 1fr);
@@ -452,6 +455,7 @@ img{
     }
 }
 
+/* = - for large screen size - = */
 @media screen and (min-width: 968px){
     body{
         margin: 3rem 0;
@@ -478,7 +482,7 @@ img{
         padding: 0 1.5rem;
     }
     .generate-pdf{
-        display: inline-block;
+        display: inline-block !important;
     }
     .section-title,
     .profile_description{
@@ -537,7 +541,7 @@ body.scale-cv{
 
 /*=== Download pdf button ===*/
 .generate-pdf{
-    /* display: none; */
+    display: none;
     position: absolute;
     top: 2.2rem;
     left: 0;
