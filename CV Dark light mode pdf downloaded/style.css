@@ -482,7 +482,7 @@ img{
         padding: 0 1.5rem;
     }
     .generate-pdf{
-        display: inline-block !important;
+        display: inline-block;
     }
     .section-title,
     .profile_description{
@@ -541,7 +541,7 @@ body.scale-cv{
 
 /*=== Download pdf button ===*/
 .generate-pdf{
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 2.2rem;
     left: 0;
