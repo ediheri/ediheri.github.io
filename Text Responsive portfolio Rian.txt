@@ -122,3 +122,5 @@
       </section>
 ~~~ scroll reveal js ~~~~
 https://raw.githubusercontent.com/jlmakes/scrollreveal/master/dist/scrollreveal.min.js
+
+font-family: 'Bai Jamjuree', sans-serif;
