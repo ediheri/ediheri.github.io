@@ -67,3 +67,39 @@ themeToggle.addEventListener("click", (e) => {
   }
 });
 //end of theme
+
+/* ~~ email js ~~*/
+const contactForm = document.getElementById("contact-form"),
+  contactMessage = document.getElementById("contact-message");
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  // serviceID - templateID - #form - publicKey
+  emailjs
+    .sendForm(
+      "service_mnq64em",
+      "template_ntzh20b",
+      "#contact-form",
+      "OZ53JzeSibg58P2v7"
+    )
+    .then(
+      () => {
+        //show sent message
+        contactMessage.textContent = "Message sent successfully ✅";
+
+        // Remove message after five seconds
+        setTimeout(() => {
+          contactMessage.textContent = "";
+        }, 5000);
+
+        // Clear input fields
+        contactForm.reset();
+      },
+      () => {
+        //show error message
+        contactMessage.textContent = "Message not sent (service error) ❌";
+      }
+    );
+};
+contactForm.addEventListener("submit", sendEmail);

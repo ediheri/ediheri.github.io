@@ -971,118 +971,128 @@
               contact <span>me</span><span class="bg-text">my identity</span>
             </h2>
           </div>
-          <h3 class="hadir">Send Me Your Feedback</h3>
-          <div class="contact-content-con">
-            <div class="left-contact">
-              <!-- <h3 class="hadir">contact me here</h3> -->
-              <!-- <p>Have any questions about me? I'd love to hear from you.</p> -->
-              <div class="contact-info">
-                <!--list cntc-->
-                <article class="contact-item">
-                  <i class="fab fa-whatsapp"></i>
-                  <h4>WhatsApp</h4>
-                  <h5>085290321716</h5>
-                  <a
-                    href="https://api.whatsapp.com/send?phone=6285290321716"
-                    target="_blank"
-                    >Chat Me</a
-                  >
-                </article>
-                <article class="contact-item">
-                  <i class="fas fa-envelope"></i>
-                  <h4>Email</h4>
-                  <h5>ediheryan@gmail.com</h5>
-                  <a href="mailto:ediheryan@gmailcom" target="_blank"
-                    >Send Me</a
-                  >
-                </article>
-                <article class="contact-item">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <h4>Location</h4>
-                  <h5>South Sumatra</h5>
-                  <a
-                    href="https://goo.gl/maps/isPpqJvP2yZLNCiC7"
-                    target="_blank"
-                    class="linkan"
-                    >view my Place</a
-                  >
-                </article>
-                <article class="contact-item">
-                  <i class="fas fa-atom"></i>
-                  <h4>Education</h4>
-                  <h5>Univ. Bina Darma</h5>
-                  <a
-                    href="https://goo.gl/maps/wHpQeqZqFGwxHeUHA"
-                    target="_blank"
-                    >View Location</a
-                  >
-                </article>
-                <article class="contact-item">
-                  <i class="fas fa-language"></i>
-                  <h4>Language</h4>
-                  <h5>English</h5>
-                  <a
-                    href="https://en.wikipedia.org/wiki/American_English"
-                    target="_blank"
-                    >View Description</a
-                  >
-                </article>
-                <!--end of list of contaact-->
-              </div>
-              <div class="contact-icons">
-                <div class="contact-icon">
-                  <a
-                    href="https://web.facebook.com/edi.heryanto.3"
-                    target="_blank"
-                  >
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                  <a
-                    href="https://www.instagram.com/ediheryanto/"
-                    target="_blank"
-                  >
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/edi-heryanto-a85b89106/"
-                    target="_blank"
-                  >
-                    <i class="fab fa-linkedin"></i>
-                  </a>
-                </div>
-              </div>
+          <div class="contact__container grid">
+            <div class="contact__data">
+              <h2 class="section__title-2">
+                <span>Contact Me.</span>
+              </h2>
+              <p class="contact__description-1">
+                I will read all emails. Send me any message you want and I'll
+                get back to you.
+              </p>
+              <p class="contact__description-2">
+                I need your <b>Name</b> and <b>Email Address</b>, but you won't
+                receive anything other than your reply.
+              </p>
+              <div class="geometric-box"></div>
             </div>
-
-            <!--right section-->
-            <div class="right-contact">
-              <!-- <h3 class="hadir">Send Me Your Feedback</h3> -->
-              <div class="ruper">
-                <form action="" class="contact__form" id="contact-form">
-                  <div class="contact__group">
+            <div class="contact__mail">
+              <h2 class="contact__title">Send Me a Message</h2>
+              <form action="" class="contact__form" id="contact-form">
+                <div class="contact__group">
+                  <!--form 1-->
+                  <div class="contact__box">
                     <input
                       type="text"
                       name="user_name"
-                      required
-                      placeholder="Enter Your Name"
                       class="contact__input"
+                      id="name"
+                      required
+                      placeholder="First Name"
                     />
+                    <label for="name" class="contact__label">First Name</label>
+                  </div>
+
+                  <!--form 2-->
+                  <div class="contact__box">
                     <input
                       type="email"
                       name="user_email"
-                      required
-                      placeholder="Enter Your Email"
                       class="contact__input"
+                      id="email"
+                      required
+                      placeholder="Email Address"
                     />
+                    <label for="email" class="contact__label"
+                      >Email Address</label
+                    >
                   </div>
-                  <textarea
-                    name="user_project"
-                    required
-                    placeholder="Enter Your Message"
+                </div>
+                <!--form 3-->
+                <div class="contact__box">
+                  <input
+                    type="text"
+                    name="user_subject"
                     class="contact__input"
+                    id="subject"
+                    required
+                    placeholder="Subect"
+                  />
+                  <label for="subject" class="contact__label">Subject</label>
+                </div>
+
+                <!--form 4-->
+                <div class="contact__box contact__area">
+                  <textarea
+                    name="user__message"
+                    id="message"
+                    class="contact__input"
+                    required
+                    placeholder="Message"
                   ></textarea>
-                  <p class="contact__message" id="contact-message"></p>
-                  <button class="button contact__button">Send Message</button>
-                </form>
+                  <label for="message" class="contact__label">Message</label>
+                </div>
+
+                <p class="contact__message" id="contact-message">
+                  <!-- Message sent successfully ✅ -->
+                </p>
+                <button type="submit" class="contact__button button">
+                  <i class="ri-send-plane-line"></i>Send Message
+                </button>
+              </form>
+            </div>
+
+            <div class="contact__social">
+              <img
+                src="img/curved-arrow.svg"
+                alt=""
+                class="contact__social-arrow"
+              />
+              <div class="contact__social-data">
+                <div>
+                  <p class="contact__social-description-1">
+                    Does not Send Email
+                  </p>
+                  <p class="contact__social-description-2">
+                    Write Me on Social Networks
+                  </p>
+                </div>
+
+                <div class="contact__social-links">
+                  <a
+                    href="https://api.whatsapp.com/send?phone=6285290321716"
+                    target="_blank"
+                    class="contact__social-link"
+                  >
+                    <i class="ri-whatsapp-line"></i>
+                  </a>
+
+                  <a
+                    href="https://web.facebook.com/edi.heryanto.3"
+                    target="_blank"
+                    class="contact__social-link"
+                  >
+                    <i class="ri-facebook-circle-line"></i>
+                  </a>
+
+                  <a
+                    href="https://www.linkedin.com/in/edi-heryanto-a85b89106/"
+                    target="_blank"
+                    class="contact__social-link"
+                  >
+                    <i class="ri-linkedin-box-line"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -1132,14 +1142,18 @@
     ></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
+    <!--email js-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
     <script src="js/app.js"></script>
     <script src="js/playermusic.js"></script>
     <script src="js/card-games.js"></script>
-    <script src="js/form.js"></script>
     <script src="js/editorphoto.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/video-playlist.js"></script>
     <script src="js/progress-bar.js"></script>
-    <script src="js/form-react.js"></script>
   </body>
 </html>
