@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio2023</title>
+
+    <!--remixicon-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+    />
+
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
@@ -58,25 +65,51 @@
     <!--<i class="fab fa-instagram"></i>-->
   </head>
   <body class="main-content">
-    <!--header-->
-    <header class="section sec1 header active" id="home">
-      <div class="header-content">
-        <div class="left-header">
-          <div class="h-shape"></div>
-          <div class="image">
-            <img src="img/hero1.png" alt="" />
+    <!--header/home-->
+    <header class="home section sec1 header active" id="home">
+      <div class="home__container container grid">
+        <h1 class="home__name">Edi Heri.</h1>
+        <div class="home__perfil">
+          <!-- <div class="h-shape"></div> -->
+          <div class="home__image">
+            <img src="img/home-perfil.JPG" alt="" class="home__img" />
+            <div class="home__shadow"></div>
+            <img src="img/curved-arrow.svg" alt="" class="home__arrow" />
+            <img src="img/random-lines.svg" alt="" class="home__line" />
+            <div class="geometric-box"></div>
+          </div>
+
+          <div class="home__social">
+            <a
+              href="https://www.instagram.com/ediheryanto/"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/edi-heryanto-a85b89106/"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="ri-linkedin-box-line"></i>
+            </a>
+            <a
+              href="https://web.facebook.com/edi.heryanto.3"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="ri-facebook-circle-line"></i>
+            </a>
           </div>
         </div>
-        <div class="right-header">
-          <h1 class="name">
-            Hi, I'm <span>Edi.</span><br />
-            I make cool things with computer.
-          </h1>
-          <p>
-            I enjoy creating kind of beautiful and functional websites. love
-            programming Language more than anything else in this world!
+        <div class="home__info">
+          <!-- <h1 class="name">Edi <span>Heri.</span><br /></h1> -->
+          <p class="home__description">
+            <b>Frontend Developer</b>, with knowledge in web development and
+            design, I offer the best projects resulting in quality work.
           </p>
-          <div class="btn-con">
+          <!-- <div class="btn-con">
             <a
               href="CV Dark light mode pdf downloaded/index.html"
               target="_blank"
@@ -85,11 +118,22 @@
               <span class="btn-text">View CV</span>
               <span class="btn-icon"><i class="fas fa-download"></i></span>
             </a>
-          </div>
+          </div> -->
+          <a
+            href="CV Dark light mode pdf downloaded/index.html"
+            target="_blank"
+            class="home__scroll"
+          >
+            <div class="home__scroll-box">
+              <i class="ri-file-code-line"></i>
+            </div>
+            <span class="home__scroll-text">My Cv</span>
+          </a>
         </div>
       </div>
     </header>
-    <!--end of header-->
+    <!--end of header/home-->
+
     <main>
       <!--about-->
       <section class="section sec2 about" id="about">
