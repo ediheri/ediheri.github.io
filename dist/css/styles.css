@@ -318,7 +318,6 @@ html {
 }
 
 .player-content {
-  padding-top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -582,7 +581,6 @@ ul li.playing {
 }
 
 .card-content {
-  padding-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1099,7 +1097,7 @@ body.dark-theme {
   background-color: hsla(14, 70%, 50%, 0.2);
 }
 
-.dark-theme :is(.home__arrow, .home__line, .about__line) {
+.dark-theme :is(.home__arrow, .home__line, .about__line, .app__arrow-1, .app__arrow-2, .app__arrow-3) {
   filter: none;
 }
 
@@ -1927,6 +1925,10 @@ img {
   justify-content: center;
   row-gap: 2rem;
   padding-top: 5rem;
+  font-family: var(--body-font-secondary);
+  justify-content: center;
+  margin-top: 70px;
+  padding: 1.1rem;
 }
 
 .services__card {
@@ -1985,17 +1987,17 @@ img {
 
 .app__arrow-1 {
   left: 40%;
-  bottom: 17rem;
+  bottom: 18rem;
 }
 
 .app__arrow-2 {
   left: 40%;
-  bottom: 18rem;
+  bottom: 19rem;
 }
 
 .app__arrow-3 {
   left: 40%;
-  bottom: 17rem;
+  bottom: 18rem;
 }
 
 .app__arrow-1, .app__arrow-2, .app__arrow-3, .home__line {
@@ -2006,11 +2008,6 @@ img {
 }
 
 /*medium devices*/
-@media screen and (min-width: 768px) {
-  .services__container {
-    grid-template-columns: repeat(2, 250px);
-  }
-}
 /*for large devices*/
 @media screen and (min-width: 1150px) {
   .app__arrow-1 {
@@ -2037,12 +2034,6 @@ img {
     gap: 2rem 4rem;
     align-items: center;
     padding-block: 5.5rem;
-  }
-  .services__container {
-    grid-template-columns: repeat(3, 282px);
-    -moz-column-gap: 5rem;
-         column-gap: 5rem;
-    padding-block: 3rem 5rem;
   }
   .services__content {
     padding: 6.5rem 1.5rem 3.5rem;
@@ -2074,14 +2065,26 @@ img {
   color: var(--text-color-light);
 }
 
+.section__title-3 {
+  position: relative;
+  font-size: 2rem;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 4rem auto -4rem;
+  font-family: var(--body-font-secondary);
+  color: var(--text-color-light);
+}
+
 .section__title-1 span,
-.section__title-2 span {
+.section__title-2 span,
+.section__title-3 span {
   z-index: 5;
   position: relative;
 }
 
 .section__title-1::after,
-.section__title-2::after {
+.section__title-2::after,
+.section__title-3::after {
   content: "";
   width: 40px;
   height: 28px;
@@ -2091,7 +2094,8 @@ img {
   right: -8px;
 }
 
-.section__title-2::after {
+.section__title-2::after,
+.section__title-3::after {
   top: initial;
   bottom: -4px;
 }
