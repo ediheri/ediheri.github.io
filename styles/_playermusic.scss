@@ -3,15 +3,7 @@
     padding: 0;
     margin: 0;
   }
-:root{
-    --pink: #ff74a4;
-    --violet: #9f6ea3;
-    --lightBlack: #515c6f;
-    --white: #ffffff;
-    --darkWhite: #cecaca;
-    --pinkShadow: #fccbdd;
-    --lightShadow: rgba(0,0,0,0.15);
-}
+
 .player-content{
     padding-top: 100px;
     display: flex;
@@ -25,8 +17,8 @@
     position: relative;
     border-radius: 15px;
     padding: 25px 30px;
-    background: var(--color-secondary);
-    box-shadow: 0px 6px 15px var(--color-grey-6);
+    background: var(--text-color);
+    box-shadow: 0px 6px 15px var(--text-color-light);
 }
 .reaper i{
     cursor: pointer;
@@ -39,11 +31,11 @@
 }
 .top-bar i{
     font-size: 30px;
-    color: var(--color-primary);
+    color: var(--black-color);
 }
 .top-bar span{
     font-size: 18px;
-    color: var(--color-primary);
+    color: var(--black-color);
 }
 .img-area{
     width: 100%;
@@ -51,7 +43,7 @@
     overflow: hidden;
     margin-top: 25px;
     border-radius: 15px;
-    box-shadow: var(--color-grey-1);
+    box-shadow: var(--white-color);
 }
 .img-area img{
     height: 100%;
@@ -64,7 +56,7 @@
     margin: 30px 0;
 }
 .song-details p{
-    color: var(--color-primary);
+    color: var(--title-color);
 }
 .song-details .name{
     font-size: 21px;
@@ -86,7 +78,7 @@
     width: 0%;
     position: relative;
     border-radius: inherit;
-    background: linear-gradient(90deg, var(--color-primary) 0%, var(--lightBlack) 100%);
+    background: linear-gradient(90deg, var(--first-color) 0%, var(--white-color) 100%);
 }
 .progress-bar::before{
     content: '';
@@ -112,7 +104,7 @@
 }
 .song-timer span{
     font-size: 13px;
-    color: var(--color-primary);
+    color: var(--black-color);
 }
 .catrolls{
     margin: 40px 0 5px 0;
@@ -120,7 +112,7 @@
 .catrolls i{
     font-size: 28px;
     user-select: none;
-    background: linear-gradient(var(--color-primary) 0%, var(--lightBlack) 100%);
+    background: linear-gradient(var(--first-color) 0%, var(--white-color) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -138,8 +130,8 @@
 .catrolls .play-pause{
     height: 54px;
     width: 54px;
-    background: linear-gradient(var(--color-white) 0%, var(--color-grey-5) 100%);
-    box-shadow: 0px 0px 5px var(--color-secondary);
+    background: linear-gradient(var(--white-color) 0%, var(--text-color) 100%);
+    box-shadow: 0px 0px 5px var(--title-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -151,7 +143,7 @@
     height: 43px;
     width: 43px;
     border-radius: inherit;
-    background: linear-gradient(var(--color-primary) 0%, var(--lightBlack) 100%);
+    background: linear-gradient(var(--first-color) 0%, var(--white-color) 100%);
 }
 .play-pause i{
     height: 43px;
@@ -168,7 +160,7 @@
 
 .music-list{
     position: absolute;
-    background: var(--color-grey-0);
+    background: var(--container-color);
     width: 100%;
     left: 0;
     bottom: -55%;
@@ -191,7 +183,7 @@
     display: flex;
     align-items: center;
     font-size: 19px;
-    color: var(--lightBlack);
+    color: var(--black-color);
 }
 .harder .row i{
     cursor: default;
@@ -201,7 +193,7 @@
 }
 .harder #close{
     font-size: 22px;
-    color: var(--lightBlack);
+    color: var(--black-color);
 }
 .music-list ul{
     margin: 10px 0;
@@ -217,8 +209,8 @@
     cursor: pointer;
     padding-bottom: 10px;
     margin-bottom: 5px;
-    color: var(--lightBlack);
-    border-bottom: 1px solid var(--color-white);
+    color: var(--black-color);
+    border-bottom: 1px solid var(--white-color);
 }
 .music-list ul li:last-child{
     border-bottom: 0px;
@@ -234,5 +226,6 @@ ul li .audio-duration{
 }
 ul li.playing{
     pointer-events: none;
-    color: var(--color-secondary);
+    color: var(--first-color);
   }
+

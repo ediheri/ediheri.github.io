@@ -10,7 +10,7 @@
     flex: 1 1 500px;
     border-radius: 5px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    background: var(--color-secondary);
+    background: var(--text-color);
     padding: 15px;
 }
 .kontaner .main-video-container .main-video{
@@ -20,7 +20,7 @@
 }
 .kontaner .main-video-container .main-vid-title{
     font-size: 20px;
-    color: #444;
+    color: var(--title-color);
 }
 .kontaner .video-list-container{
     flex: 1 1 250px;
@@ -28,18 +28,18 @@
     overflow-y: scroll;
     border-radius: 5px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    background: var(--color-secondary);
+    background: var(--text-color-light);
     padding: 15px;
 }
 .kontaner .video-list-container::-webkit-scrollbar{
     width: 10px;
 }
 .kontaner .video-list-container::-webkit-scrollbar-track{
-    background-color: var(--color-grey-0);
+    background-color: var(--white-color);
     border-radius: 5px;
 }
 .kontaner .video-list-container::-webkit-scrollbar-thumb{
-    background-color: #444;
+    background-color: var(--black-color-light);
     border-radius: 5px;
 }
 .kontaner .video-list-container .list{
@@ -47,7 +47,7 @@
     align-items: center;
     gap: 15px;
     padding: 10px;
-    background-color: var(--color-grey-0);
+    background-color: var(--text-color);
     cursor: pointer;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -56,10 +56,10 @@
     margin-bottom: 0;
 }
 .kontaner .video-list-container .list.active{
-    background-color: #444;
+    background-color: var(--black-color);
 }
 .kontaner .video-list-container .list.active .list-title{
-    color: #fff;
+    color: var(--white-color);
 }
 .kontaner .video-list-container .list .list-video{
     width: 100px;
@@ -67,7 +67,7 @@
 }
 .kontaner .video-list-container .list .list-title{
     font-size: 17px;
-    color: #444;
+    color: var(--white-color);
 }
 
 @media (max-width: 1200px){

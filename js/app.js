@@ -37,36 +37,42 @@ function pageTransitions() {
 }
 pageTransitions();
 
-//theme
-let themeToggle = document.querySelector(".theme-btn");
-let themeToggleIcon = document.querySelector(".theme-btn ion-icon");
-// let themeName = document.querySelector(".theme_toggle .theme-btn");
-let getTheme = localStorage.getItem("theme");
+/* ~~~ dark light theme ~~~ */
+const themeButton = document.getElementById("theme-button");
+const darkTheme = "dark-theme";
+const iconTheme = "ri-sun-line";
 
-if (getTheme !== null) {
-  themeToggleIcon.setAttribute("name", "moon-outline");
-  document.documentElement.setAttribute("theme", getTheme);
-  // themeName.innerText = "dark";
-} else {
-  themeToggleIcon.setAttribute("name", "sunny-outline");
-  // themeName.innerText = "light";
+//preiously seleted topic if user selected
+const selectedTheme = localStorage.getItem("selected-theme");
+const selectedIcon = localStorage.getItem("selected-icon");
+
+//we obtain the current theme that the interface has by validating the dark theme class
+const getCurrentTheme = () =>
+  document.body.classList.contains(darkTheme) ? "dark" : "light";
+const getCurrentIcon = () =>
+  document.body.classList.contains(iconTheme) ? "ri-moon-line" : "ri-sun-line";
+
+//we validate if the user previously chose a topic
+if (selectedTheme) {
+  //if the validation is fulfilled we ask what the issue to know if we activated or deactivated the dark theme
+  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
+    darkTheme
+  );
+  themeButton.classList[selectedIcon === "ri-moon-line" ? "add" : "remove"](
+    iconTheme
+  );
 }
 
-themeToggle.addEventListener("click", (e) => {
-  e.preventDefault();
-  if (!document.documentElement.hasAttribute("theme")) {
-    themeToggleIcon.setAttribute("name", "moon-outline");
-    document.documentElement.setAttribute("theme", "dark");
-    // themeName.innerText = "dark";
-    localStorage.setItem("theme", "dark");
-  } else {
-    themeToggleIcon.setAttribute("name", "sunny-outline");
-    document.documentElement.removeAttribute("theme", "dark");
-    // themeName.innerText = "light";
-    localStorage.removeItem("theme");
-  }
+//activate or deactivate the theme manually with the button
+themeButton.addEventListener("click", () => {
+  //add or remove the dark or icon theme
+  document.body.classList.toggle(darkTheme);
+  themeButton.classList.toggle(iconTheme);
+  //we save the theme and the current icon that the user chose
+  localStorage.setItem("selected-theme", getCurrentTheme());
+  localStorage.setItem("selected-icon", getCurrentIcon());
 });
-//end of theme
+/*--end of theme*/
 
 /* ~~ email js ~~*/
 const contactForm = document.getElementById("contact-form"),
