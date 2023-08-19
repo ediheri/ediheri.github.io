@@ -1122,13 +1122,32 @@ section {
   pointer-events: none;
 }
 
+/*breakpoints*/
+@media screen and (max-width: 576px) {
+  .controlls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--container-color);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+  }
+  .controlls .control {
+    margin: 0.6rem 1rem !important;
+  }
+}
 .theme-btn {
   top: 5%;
   right: 3%;
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background-color: var(--black-color-light);
+  background-color: var(--container-color);
   cursor: pointer;
   position: fixed;
   display: flex;
@@ -1843,8 +1862,15 @@ img {
 }
 
 .services__title {
+  font-family: var(--body-font-secondary);
   font-size: var(--h2-font-size);
   margin-bottom: 1.25rem;
+  color: var(--title-color);
+}
+
+.services__description {
+  font-family: var(--body-font-secondary);
+  color: var(--text-color);
 }
 
 .app__arrow-1 {
@@ -2470,19 +2496,6 @@ footer a:hover {
   .main-title h2 .bg-text {
     font-size: 2.5rem;
   }
-  .controlls {
-    top: auto;
-    bottom: 0;
-    flex-direction: row;
-    justify-content: center;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    background-color: var(--color-grey-5);
-  }
-  .controlls .control {
-    margin: 1rem 0.3rem;
-  }
 }
 @media screen and (max-width: 1024px) {
   header {
@@ -2566,21 +2579,6 @@ footer a:hover {
   .ruper .hadir {
     font-size: 1.3rem;
     text-align: none;
-  }
-  .controlls {
-    top: auto;
-    bottom: 0;
-    flex-direction: row;
-    justify-content: center;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    background-color: var(--color-grey-5);
-    border-top-left-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
-  }
-  .controlls .control {
-    margin: 0.6rem 1rem !important;
   }
   .section {
     padding: 7rem 3rem;
