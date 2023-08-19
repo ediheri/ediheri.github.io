@@ -169,3 +169,250 @@ html[theme='dark'] {
     --body-color: hsl(0, 0%, 8%);
     --container-color: hsl(0, 0%, 12%);
 }
+
+          <div class="photo__slider condainer">
+            <div class="swiper tranding-slider">
+              <div class="swiper-wrapper">
+                <!--slide start-->
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="img/slider-01.jpg" alt="Tranding" />
+                  </div>
+                  <div class="tranding-slide-content">
+                    <h1 class="food-price">Free</h1>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="food-name">Brainwashing Illustration</h2>
+                      <h3 class="food-rating">
+                        <span>4.5</span>
+                        <div class="rating">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <!--slide end-->
+                <!--slide start-->
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="img/slider-02.jpg" alt="Tranding" />
+                  </div>
+                  <div class="tranding-slide-content">
+                    <h1 class="food-price">Free</h1>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="food-name">Running Light</h2>
+                      <h3 class="food-rating">
+                        <span>4.7</span>
+                        <div class="rating">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <!--slide end-->
+                <!--slide start-->
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="img/slider-03.jpg" alt="Tranding" />
+                  </div>
+                  <div class="tranding-slide-content">
+                    <h1 class="food-price">Free</h1>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="food-name">Winter Snow</h2>
+                      <h3 class="food-rating">
+                        <span>4.8</span>
+                        <div class="rating">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <!--slide end-->
+                <!--slide start-->
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="img/slider-04.jpg" alt="Tranding" />
+                  </div>
+                  <div class="tranding-slide-content">
+                    <h1 class="food-price">Free</h1>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="food-name">Vector Art</h2>
+                      <h3 class="food-rating">
+                        <span>4.5</span>
+                        <div class="rating">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <!--slide end-->
+                <!--slide start-->
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="img/slider-05.jpg" alt="Tranding" />
+                  </div>
+                  <div class="tranding-slide-content">
+                    <h1 class="food-price">Free</h1>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="food-name">Happy Place</h2>
+                      <h3 class="food-rating">
+                        <span>4.1</span>
+                        <div class="rating">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <!--slide end-->
+                <!--slide start-->
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="img/slider-06.jpg" alt="Tranding" />
+                  </div>
+                  <div class="tranding-slide-content">
+                    <h1 class="food-price">Free</h1>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="food-name">Coffee Maker</h2>
+                      <h3 class="food-rating">
+                        <span>4.8</span>
+                        <div class="rating">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <!--slide end-->
+                <!--slide start-->
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="img/slider-07.jpg" alt="Tranding" />
+                  </div>
+                  <div class="tranding-slide-content">
+                    <h1 class="food-price">Free</h1>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="food-name">Red Car</h2>
+                      <h3 class="food-rating">
+                        <span>4.5</span>
+                        <div class="rating">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <!--slide end-->
+                <!--slide start-->
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="img/slider-08.jpg" alt="Tranding" />
+                  </div>
+                  <div class="tranding-slide-content">
+                    <h1 class="food-price">Free</h1>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="food-name">Building</h2>
+                      <h3 class="food-rating">
+                        <span>4.6</span>
+                        <div class="rating">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <!--slide end-->
+                <!--slide start-->
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="img/slider-09.jpg" alt="Tranding" />
+                  </div>
+                  <div class="tranding-slide-content">
+                    <h1 class="food-price">Free</h1>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="food-name">astronaut</h2>
+                      <h3 class="food-rating">
+                        <span>4.9</span>
+                        <div class="rating">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <!--slide end-->
+                <!--slide start-->
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="img/slider-10.jpg" alt="Tranding" />
+                  </div>
+                  <div class="tranding-slide-content">
+                    <h1 class="food-price">Trial</h1>
+                    <div class="tranding-slide-content-bottom">
+                      <h2 class="food-name">Machine</h2>
+                      <h3 class="food-rating">
+                        <span>4.3</span>
+                        <div class="rating">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <!--slide end-->
+              </div>
+
+              <div class="tranding-slider-control">
+                <div class="swiper-button-prev slider-arrow">
+                  <ion-icon name="arrow-back-outline"></ion-icon>
+                </div>
+                <div class="swiper-button-next slider-arrow">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
