@@ -99,33 +99,6 @@
         margin-top: 1.5rem;
     }
 
-    //title//
-    // .main-title{
-    //     h2{
-    //         font-size: 2rem;
-    //         span{
-    //             font-size: 2.5rem;
-    //         }
-    //         .bg-text{
-    //             font-size: 2.5rem;
-    //         }
-    //     }
-    // }
-
-    // .controlls{
-    //     top: auto;
-    //     bottom: 0;
-    //     flex-direction: row;
-    //     justify-content: center;
-    //     left: 50%;
-    //     transform: translateX(-50%);
-    //     width: 100%;
-    //     background-color: var(--title-color);
-    //     .control{
-    //         margin: 1rem .3rem;
-    //     }
-    // }
-
 }
 
 @media screen and (max-width: 1024px){
@@ -157,9 +130,6 @@
         width: 90%;
         margin: 0 auto;
     }
-    // .name{
-    //         font-size: 2.5rem !important;
-    // }
     .right-header .name
     .header-content .left-header .image{
         margin: 0 auto;
@@ -181,17 +151,6 @@
     .blogs{
         grid-template-columns: 1fr 1fr;
     }
-    // .main-title{
-    //     h2{
-    //         font-size: 4rem;
-    //         span{
-    //             font-size: 4rem;
-    //         }
-    //         .bg-text{
-    //             font-size: 4rem;
-    //         }
-    //     }
-    // }
 
     //portfolio//
     .portfolios .portfolio-item .hover-items .icons .icon{
@@ -201,48 +160,7 @@
     .text-demo h4{
         font-size: 1.3rem;
     }
-    //contact//
-    .contact-content-con{
-        flex-direction: column;
-        .right-contact{
-            margin-left: 0;
-            margin-top: 2.5rem;
-        }
-    }
-    
-    .contact-content-con .right-contact .i-c-2{
-        flex-direction: column;
-    }
-    .contact-content-con .right-contact .i-c-2 :last-child{
-        margin-left: 0;
-        margin-top: 1.5rem;
-    }
-    .contact-content-con .left-contact h4{
-        font-size: 1.5rem;
-    }
-    .ruper .hadir{
-        font-size: 1.3rem;
-        text-align: none;
-    }
-    // .header-content .left-header .image{
-    //     margin: 0 auto;
-    //     width: 90%;
-    // }
-    // .controlls{
-    //     top: auto;
-    //     bottom: 0;
-    //     flex-direction: row;
-    //     justify-content: center;
-    //     left: 50%;
-    //     transform: translateX(-50%);
-    //     width: 100%;
-    //     background-color: var(--text-color-light);
-    //     border-top-left-radius: 1.5rem;
-    //     border-top-right-radius: 1.5rem;
-    //     .control{
-    //         margin: .6rem 1rem !important;
-    //     }
-    // }
+
     .section{
         // padding: 7rem 3rem;
         .about-stats{
@@ -251,17 +169,6 @@
             }
         }
     }
-    // .main-title{
-    //     h2{
-    //         font-size: 1.5rem;
-    //         span{
-    //             font-size: 1.5rem;
-    //         }
-    //         .bg-text{
-    //             font-size: 2.5rem;
-    //         }
-    //     }
-    // }
     footer{
         font-size: 0.7rem;
         transform: 
