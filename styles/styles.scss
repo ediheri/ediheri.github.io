@@ -804,6 +804,7 @@ img{
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
     padding-bottom: 3rem;
+    font-family: var(--body-font-secondary);
     .timeline-item{
         position: relative;
         padding-left: 3rem;

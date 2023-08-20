@@ -813,6 +813,7 @@ ul li.playing {
   grid-gap: 2rem;
   align-items: center;
   justify-content: center;
+  font-family: var(--body-font-secondary);
 }
 
 @media (max-width: 1024px) {
@@ -1719,6 +1720,7 @@ img {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
   padding-bottom: 3rem;
+  font-family: var(--body-font-secondary);
 }
 .timeline .timeline-item {
   position: relative;
