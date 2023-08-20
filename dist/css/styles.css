@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   align-items: flex-start;
   gap: 20px;
+  font-family: var(--body-font-secondary);
 }
 
 .kontaner .main-video-container {
@@ -121,7 +122,7 @@
 .discover__title,
 .discover__description {
   font-family: var(--body-font-secondary);
-  color: var(--title-color);
+  color: var(--white-color);
 }
 
 .discover__title {
@@ -193,6 +194,7 @@
   padding: 25px 30px;
   background: var(--text-color);
   box-shadow: 0px 6px 15px var(--text-color-light);
+  font-family: var(--body-font-secondary);
 }
 
 .reaper i {
@@ -446,6 +448,7 @@ ul li.playing {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: var(--body-font-secondary);
 }
 
 ::-moz-selection {
@@ -640,6 +643,7 @@ ul li.playing {
   border-radius: 10px;
   padding: 30px 35px 35px;
   box-shadow: 0px 6px 15px var(--text-color-light);
+  font-family: var(--body-font-secondary);
 }
 
 .combainer.disable :where(.editor-panel, .reset-filter, .save-img) {
