@@ -1,42 +1,3 @@
-const sections = document.querySelectorAll(".section");
-const sectBtns = document.querySelectorAll(".controlls");
-const sectBtn = document.querySelectorAll(".control");
-const allSections = document.querySelector(".main-content");
-
-function pageTransitions() {
-  //btn click active class
-  for (let i = 0; i < sectBtn.length; i++) {
-    sectBtn[i].addEventListener("click", function () {
-      let currentBtn = document.querySelectorAll(".active-btn");
-      currentBtn[0].className = currentBtn[0].className.replace(
-        "active-btn",
-        ""
-      );
-      this.className += " active-btn";
-    });
-  }
-  //section active class
-  allSections.addEventListener("click", (e) => {
-    const id = e.target.dataset.id;
-    if (id) {
-      //remove selected from the other btns
-      sectBtn.forEach((btn) => {
-        btn.classList.remove("active");
-      });
-      e.target.classList.add("active");
-
-      //hide other sections
-      sections.forEach((section) => {
-        section.classList.remove("active");
-      });
-
-      const element = document.getElementById(id);
-      element.classList.add("active");
-    }
-  });
-}
-pageTransitions();
-
 /* ~~~ dark light theme ~~~ */
 const themeButton = document.getElementById("theme-button");
 const darkTheme = "dark-theme";
@@ -109,3 +70,76 @@ const sendEmail = (e) => {
     );
 };
 contactForm.addEventListener("submit", sendEmail);
+
+//show navigation
+/* ~~~ show menu ~~~ */
+const navMenu = document.getElementById("nav-menu"),
+  navToggle = document.getElementById("nav-toggle"),
+  navClose = document.getElementById("nav-close");
+
+/* ~~~ menu show ~~~ */
+if (navToggle) {
+  navToggle.addEventListener("click", () => {
+    navMenu.classList.add("show-menu");
+  });
+}
+
+/* ~~~ menu hidden ~~~ */
+// validate if constant exists//
+if (navClose) {
+  navClose.addEventListener("click", () => {
+    navMenu.classList.remove("show-menu");
+  });
+}
+
+/* ~~~ remove menu mobile ~~~ */
+const navLink = document.querySelectorAll(".nav__link");
+
+const linkAction = () => {
+  const navMenu = document.getElementById("nav-menu");
+  //when we click on each nav link, we remve the show menu class//
+  navMenu.classList.remove("show-menu");
+};
+navLink.forEach((n) => n.addEventListener("click", linkAction));
+
+/* ~~~ shadow header ~~~ */
+const shadowHeader = () => {
+  const header = document.getElementById("header");
+  //when the scroll is greater than 50 viewport height, add the shadow header class to the header tag
+  this.scrollY >= 50
+    ? header.classList.add("shadow-header")
+    : header.classList.remove("shadow-header");
+};
+window.addEventListener("scroll", shadowHeader);
+
+/* ~~~ show scroll up ~~ */
+const scrollUp = () => {
+  const scrollUp = document.getElementById("scroll-up");
+  //when the scroll is higher than 350 view port add the show scroll class to the a tag with the scrollup class
+  this.scrollY >= 350
+    ? scrollUp.classList.add("show-scroll")
+    : scrollUp.classList.remove("show-scroll");
+};
+window.addEventListener("scroll", scrollUp);
+
+/* scroll section active link */
+const sections = document.querySelectorAll("section[id]");
+const scrollActive = () => {
+  const scrollDown = window.scrollY;
+
+  sections.forEach((current) => {
+    const sectionHeight = current.offsetHeight,
+      sectionTop = current.offsetTop - 58,
+      sectionId = current.getAttribute("id"),
+      sectionsClass = document.querySelector(
+        ".nav__menu a[href*=" + sectionId + "]"
+      );
+
+    if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
+      sectionsClass.classList.add("active-link");
+    } else {
+      sectionsClass.classList.remove("active-link");
+    }
+  });
+};
+window.addEventListener("scroll", scrollActive);
