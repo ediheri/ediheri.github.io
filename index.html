@@ -2,64 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio2023</title>
 
-    <!-- favicon -->
-    <link rel="shortcut icon" href="img/edi r logo.png" type="image/x-icon" />
-
-    <!--swiper phot css-->
-    <link
-      rel="stylesheet"
-      href="styles/unpkg.com_swiper@10.0.4_swiper-bundle.min.css"
+    <!-- primary meta tag -->
+    <title>edi - web developer based on south sumatra</title>
+    <meta name="title" content="Edi - Web Developer based on south sumatra" />
+    <meta
+      name="description"
+      content="this is personal portfolio templade made by ediheri"
     />
 
-    <!--remixicon-->
+    <!--favicon-->
+    <!--remixicons-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
     />
 
-    <!--style css-->
-    <link rel="stylesheet" href="dist/css/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
+
+    <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"
-      integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+
+    <!--css-->
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <title>Resp Portfolio Aug</title>
   </head>
   <body>
-    <!--navigation-->
+    <!-- PRELOADER -->
+    <div class="preloader" data-preloader>
+      <div class="preloader-circle"></div>
+    </div>
+
+    <!--header-->
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo">
@@ -71,20 +53,20 @@
           <h3 class="nav__name">Edi</h3>
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link active-link active">Home</a>
+              <a href="#home" class="nav__link active-link">Home</a>
             </li>
             <li class="nav__item">
               <a href="#about" class="nav__link">About Me</a>
             </li>
             <li class="nav__item">
-              <a href="#service" class="nav__link">Services</a>
+              <a href="#services" class="nav__link">Services</a>
             </li>
             <li class="nav__item">
-              <a href="#project" class="nav__link">Projects</a>
+              <a href="#projects" class="nav__link">Projects</a>
             </li>
             <li class="nav__item">
-              <a href="#contact" class="nav__link nav__link-button"
-                >Contact Me</a
+              <a href="#contact" class="nav__link btn btn-primary"
+                >Contact Now</a
               >
             </li>
           </ul>
@@ -105,42 +87,41 @@
       </nav>
     </header>
 
+    <!--main-->
     <main class="main">
-      <!-- home section -->
-      <section class="section home" id="home">
+      <!--home-->
+      <section class="home section" id="home">
         <div class="home__container container grid">
-          <h1 class="home__name">Edi Heri.</h1>
+          <h1 class="home__name">Edi Heri</h1>
           <div class="home__perfil">
-            <!-- <div class="h-shape"></div> -->
             <div class="home__image">
-              <img src="img/home-perfil.JPG" alt="" class="home__img" />
+              <img src="img/edi-black-and-white.jpg" alt="" class="home__img" />
               <div class="home__shadow"></div>
               <img src="img/curved-arrow.svg" alt="" class="home__arrow" />
               <img src="img/random-lines.svg" alt="" class="home__line" />
               <div class="geometric-box"></div>
             </div>
-
             <div class="home__social">
               <a
-                href="https://www.instagram.com/ediheryanto/"
+                href="https://www.instagram.com/"
                 target="_blank"
                 class="home__social-link"
               >
                 <i class="ri-instagram-line"></i>
               </a>
               <a
-                href="https://www.linkedin.com/in/edi-heryanto-a85b89106/"
+                href="https://www.linkedin.com/"
                 target="_blank"
                 class="home__social-link"
               >
                 <i class="ri-linkedin-box-line"></i>
               </a>
               <a
-                href="https://web.facebook.com/edi.heryanto.3"
+                href="https://github.com/"
                 target="_blank"
                 class="home__social-link"
               >
-                <i class="ri-facebook-circle-line"></i>
+                <i class="ri-github-line"></i>
               </a>
             </div>
           </div>
@@ -149,25 +130,22 @@
               <b>Frontend Developer</b>, with knowledge in web development and
               design, I offer the best projects resulting in quality work.
             </p>
+
             <a
-              href="CV Dark light mode pdf downloaded/index.html"
+              href="../CV Dark light mode pdf downloaded/index.html"
               target="_blank"
-              class="home__scroll"
+              class="btn btn-primary"
+              >Resume</a
             >
-              <div class="home__scroll-box">
-                <i class="ri-file-code-line"></i>
-              </div>
-              <span class="home__scroll-text">My Cv</span>
-            </a>
           </div>
         </div>
       </section>
 
-      <!--about section-->
-      <section class="section about" id="about">
+      <!--about-->
+      <section class="about section" id="about">
         <div class="about__container container grid">
           <h2 class="section__title-1">
-            <span>My Info.</span>
+            <span>About Me.</span>
           </h2>
           <div class="about__perfil">
             <div class="about__image">
@@ -178,704 +156,555 @@
               <div class="about__box"></div>
             </div>
           </div>
-
           <div class="about__info">
             <p class="about__description">
-              Passionate about creating <b>Web Pages</b> with
-              <b>UI/UX User Interface</b>, I have years of experience and many
-              clients are happy with the projects carried out.
+              A Freelancer <b>Front-end Developer</b> with years of experience.
+              with <b>UI/UX User Interface</b>, I code and create web elements.
+              and I enjoy working with new people. new people new experiences.
             </p>
-            <div class="about__buttons">
+            <ul class="about__list">
+              <li class="about__item">
+                <b>my location:</b> Based in South Sumatra, Indonesia.
+              </li>
+            </ul>
+
+            <div class="wrapper">
+              <a href="#contact" class="btn btn-primary">Contact Me</a>
               <a
-                href="CV Dark light mode pdf downloaded/index.html"
+                href="../CV Dark light mode pdf downloaded/index.html"
                 target="_blank"
-                class="button"
+                class="btn btn-secondary"
+                >Resume</a
               >
-                <i class="ri-file-paper-2-line"></i> My Resume
-              </a>
-              <a
-                href="https://api.whatsapp.com/send?phone=6285290321716"
-                target="_blank"
-                class="button__ghost"
-              >
-                <i class="ri-whatsapp-line"></i>
-              </a>
             </div>
           </div>
         </div>
-        <div class="about-stats">
-          <h2 class="section__title-2">
-            <span>My Skills</span>
+
+        <!-- SKILL -->
+        <section class="section skill" aria-labelledby="skill-label">
+          <div class="container">
+            <div class="skill-content">
+              <h2 class="section-title headline-md" id="skill-label">
+                My Skills
+              </h2>
+              <ul class="skill-list">
+                <li>
+                  <div
+                    class="card card-sm"
+                    style="background-color: hsl(177, 39%, 72%)"
+                  >
+                    <div class="card-media">
+                      <ion-icon name="logo-html5"></ion-icon>
+                    </div>
+                    <h2 class="card-title">HTML</h2>
+                  </div>
+                </li>
+
+                <li>
+                  <div
+                    class="card card-sm"
+                    style="background-color: hsl(41, 99%, 64%)"
+                  >
+                    <div class="card-media">
+                      <ion-icon name="logo-css3"></ion-icon>
+                    </div>
+                    <h2 class="card-title">CSS</h2>
+                  </div>
+                </li>
+
+                <li>
+                  <div
+                    class="card card-sm"
+                    style="background-color: hsl(19, 97%, 85%)"
+                  >
+                    <div class="card-media">
+                      <ion-icon name="logo-react"></ion-icon>
+                    </div>
+                    <h2 class="card-title">React JS</h2>
+                  </div>
+                </li>
+
+                <li>
+                  <div
+                    class="card card-sm"
+                    style="background-color: hsl(221, 100%, 79%)"
+                  >
+                    <div class="card-media">
+                      <ion-icon name="logo-angular"></ion-icon>
+                    </div>
+                    <h2 class="card-title">Angular</h2>
+                  </div>
+                </li>
+
+                <li>
+                  <div
+                    class="card card-sm"
+                    style="background-color: hsl(76, 39%, 72%)"
+                  >
+                    <div class="card-media">
+                      <ion-icon name="logo-apple"></ion-icon>
+                    </div>
+                    <h2 class="card-title">iOs App</h2>
+                  </div>
+                </li>
+
+                <li>
+                  <div
+                    class="card card-sm"
+                    style="background-color: hsl(245, 100%, 90%)"
+                  >
+                    <div class="card-media">
+                      <ion-icon name="logo-android"></ion-icon>
+                    </div>
+                    <h2 class="card-title">App Dev</h2>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <figure class="skill-banner">
+              <img
+                src="./img/IMG-20230529-cprss.jpg"
+                width="581"
+                height="657"
+                loading="lazy"
+                alt="edi in black suit with a big smile on his face"
+                class="w-100"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <!-- TESTIMONIAL -->
+        <section class="section testi" aria-labelledby="testi-label">
+          <div class="container">
+            <h2 class="headline-md section-title text-center" id="testi-label">
+              Testimonial
+            </h2>
+            <ul class="slider">
+              <li class="slider-item card-container">
+                <div class="card card-lg">
+                  <figure class="card-media">
+                    <img
+                      src="./img/avatar-1.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="top guys"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <blockquote class="body-sm">
+                      Hired to create a corporate identity. We were very pleased
+                      with the work done.
+                    </blockquote>
+
+                    <p class="client-name">Brian Darwinta</p>
+                    <p class="client-title">CEO at Private Co.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="slider-item card-container">
+                <div class="card card-lg">
+                  <figure class="card-media">
+                    <img
+                      src="./img/avatar-2.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="top guys"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <blockquote class="body-sm">
+                      Passionate about dev & design, carries out projects at the
+                      request of users.
+                    </blockquote>
+
+                    <p class="client-name">Tailor Lara</p>
+                    <p class="client-title">SVP at Private Co</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="slider-item card-container">
+                <div class="card card-lg">
+                  <figure class="card-media">
+                    <img
+                      src="./img/avatar-3.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="top guys"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <blockquote class="body-sm">
+                      He has a lot of experience in development and is very
+                      concerned about the needs of client.
+                    </blockquote>
+
+                    <p class="client-name">Noriah Mili</p>
+                    <p class="client-title">CEO at Kingdom</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="slider-item card-container">
+                <div class="card card-lg">
+                  <figure class="card-media">
+                    <img
+                      src="./img/avatar-4.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="top guys"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <blockquote class="body-sm">
+                      He has a lot of inovation and inspired people around him.
+                      doing work about dev.
+                    </blockquote>
+
+                    <p class="client-name">Rino Edwardi</p>
+                    <p class="client-title">CEO at Moriss</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+
+      <!-- SERVICE -->
+      <section
+        class="section service has-bg-image"
+        aria-labelledby="service-label"
+        id="services"
+      >
+        <div class="container">
+          <h2 class="section-title headline-md text-center" id="service-label">
+            My services
           </h2>
-
-          <div class="progress-bars"></div>
-          <!--progress-bar-->
-          <div class="progress_container">
-            <div class="progressive">
-              <div class="progress_item">
-                <h3 class="progress_title">HTML</h3>
-                <div class="progress_bar">
-                  <div class="bar" data-value="95" data-text="95"></div>
-                </div>
-              </div>
-              <div class="progress_item">
-                <h3 class="progress_title">CSS</h3>
-                <div class="progress_bar">
-                  <div class="bar" data-value="90" data-text="90"></div>
-                </div>
-              </div>
-              <div class="progress_item">
-                <h3 class="progress_title">JavaScript</h3>
-                <div class="progress_bar">
-                  <div class="bar" data-value="85" data-text="85"></div>
-                </div>
-              </div>
-              <div class="progress_item">
-                <h3 class="progress_title">Python</h3>
-                <div class="progress_bar">
-                  <div class="bar" data-value="75" data-text="75"></div>
-                </div>
-              </div>
-              <div class="progress_item">
-                <h3 class="progress_title">React</h3>
-                <div class="progress_bar">
-                  <div class="bar" data-value="65" data-text="65"></div>
-                </div>
-              </div>
-              <div class="progress_item">
-                <h3 class="progress_title">PHP</h3>
-                <div class="progress_bar">
-                  <div class="bar" data-value="80" data-text="80"></div>
-                </div>
-              </div>
-              <div class="progress_item">
-                <h3 class="progress_title">Photoshop</h3>
-                <div class="progress_bar">
-                  <div class="bar" data-value="70" data-text="70"></div>
-                </div>
-              </div>
-              <div class="progress_item">
-                <h3 class="progress_title">Illustrator</h3>
-                <div class="progress_bar">
-                  <div class="bar" data-value="75" data-text="75"></div>
-                </div>
-              </div>
-              <div class="progress_item">
-                <h3 class="progress_title">aftereffects</h3>
-                <div class="progress_bar">
-                  <div class="bar" data-value="60" data-text="60"></div>
-                </div>
-              </div>
-              <div class="progress_item">
-                <h3 class="progress_title">premierepro</h3>
-                <div class="progress_bar">
-                  <div class="bar" data-value="70" data-text="70"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--end of progress-bar-->
-        </div>
-        <!--timeline-->
-        <h2 class="section__title-1">
-          <span>My Timeline</span>
-        </h2>
-
-        <div class="timeline">
-          <!--list of tl-->
-          <div class="timeline-item">
-            <div class="tl-icon">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <p class="tl-duration">2023 - present</p>
-            <h5>Horticulturist<span> - Private Company</span></h5>
-            <p>
-              Having varieties of duties which dealing with growing and
-              maintaining plants directly.
-            </p>
-          </div>
-          <!--end of list tl-->
-          <!--list of tl-->
-          <div class="timeline-item">
-            <div class="tl-icon">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <p class="tl-duration">2019 - present</p>
-            <h5>Front-end developer<span> - Side Gig</span></h5>
-            <p>
-              working independently as freelancers to make and maintain websites
-              and web applications, and I use web-facing technology to build
-              software.
-            </p>
-          </div>
-          <!--end of list tl-->
-          <!--list of tl-->
-          <div class="timeline-item">
-            <div class="tl-icon">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <p class="tl-duration">2017 - 2019</p>
-            <h5>Motionographer<span> - Side Gig</span></h5>
-            <p>
-              making typography, illustrations, and other visual elements appear
-              to move.
-            </p>
-          </div>
-          <!--end of list tl-->
-          <!--list of tl-->
-          <div class="timeline-item">
-            <div class="tl-icon">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <p class="tl-duration">2016 - 2017</p>
-            <h5>Retoucher<span> - Side Gig</span></h5>
-            <p>
-              merging some simple photos and turn it into a fantastic photo
-              manipulation with interesting effects and exciting lighting.
-            </p>
-          </div>
-          <!--end of list tl-->
-          <!--list of tl-->
-          <div class="timeline-item">
-            <div class="tl-icon">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <p class="tl-duration">2015 - 2018</p>
-            <h5>Front Desk Officer<span> - Private Company</span></h5>
-            <p>
-              Distributing room keys, registering guests and verifying
-              reservations. Also tasked with helping guests with any questions
-              or complaints.
-            </p>
-          </div>
-          <!--end of list tl-->
-          <!--list of tl-->
-          <div class="timeline-item">
-            <div class="tl-icon">
-              <i class="fas fa-atom"></i>
-            </div>
-            <p class="tl-duration">2008 - 2015</p>
-            <h5>
-              english language & literature<span>
-                - universitas bina darma</span
+          <ul class="service-list">
+            <li class="card-container">
+              <div
+                class="card card-md"
+                style="background-color: hsl(177, 39%, 72%)"
               >
-            </h5>
-            <p>
-              A degree in English language and literature was designed to make
-              me reading any kind of books, analyzing theories, critiquing prose
-              and verse, and taking a more critical look at the signs and words
-              surrounding me every day.
-            </p>
-          </div>
-          <!--end of list tl-->
-          <!--list of tl-->
-          <div class="timeline-item">
-            <div class="tl-icon">
-              <i class="fas fa-atom"></i>
-            </div>
-            <p class="tl-duration">2005 - 2008</p>
-            <h5>natural science student<span> - SMAN 2 south sumatra</span></h5>
-            <p>
-              the school's student enrollment rate rises to 60%, making it one
-              of the most preffered schools in my city.
-            </p>
-          </div>
-          <!--end of list tl-->
-          <!--list of tl-->
-          <div class="timeline-item">
-            <div class="tl-icon">
-              <i class="fas fa-atom"></i>
-            </div>
-            <p class="tl-duration">2002 - 2005</p>
-            <h5>regular student<span> - SMPN6 south sumatra</span></h5>
-            <p>
-              the school is well known for producing the best football player in
-              south sumatra.
-            </p>
-          </div>
-          <!--end of list tl-->
-          <!--list of tl-->
-          <div class="timeline-item">
-            <div class="tl-icon">
-              <i class="fas fa-atom"></i>
-            </div>
-            <p class="tl-duration">1996 - 2002</p>
-            <h5>regular student<span> - SDN31 south sumatra</span></h5>
-            <p>
-              A Starting Point For Introducing a Lifelong Love For Learning
-              basic knowledge.
-            </p>
-          </div>
-          <!--end of list tl-->
-        </div>
-        <!--end of timeline-->
-      </section>
-
-      <!--service section-->
-      <section class="section services" id="service">
-        <div class="portfolio__container container">
-          <!--slider-->
-          <div class="swiper__container">
-            <h2 class="section__title-1">
-              <span>Photo</span>
-            </h2>
-            <div class="discover" id="discover">
-              <div class="discover__container container swiper">
-                <div class="card__content swiper-wrapper">
-                  <!--dicover 01-->
-                  <div class="discover__card swiper-slide">
-                    <img src="img/slider-01.jpg" alt="" class="discover__img" />
-                    <div class="discover__data">
-                      <h2 class="discover__title">Brainwashing Art</h2>
-                      <span class="discover__description">Illustration</span>
-                    </div>
-                  </div>
-                  <!--dicover 02-->
-                  <div class="discover__card swiper-slide">
-                    <img src="img/slider-02.jpg" alt="" class="discover__img" />
-                    <div class="discover__data">
-                      <h2 class="discover__title">Running Light</h2>
-                      <span class="discover__description">Illustration</span>
-                    </div>
-                  </div>
-                  <!--dicover 03-->
-                  <div class="discover__card swiper-slide">
-                    <img src="img/slider-03.jpg" alt="" class="discover__img" />
-                    <div class="discover__data">
-                      <h2 class="discover__title">Winter Snow</h2>
-                      <span class="discover__description">Vector</span>
-                    </div>
-                  </div>
-                  <!--dicover 04-->
-                  <div class="discover__card swiper-slide">
-                    <img src="img/slider-04.jpg" alt="" class="discover__img" />
-                    <div class="discover__data">
-                      <h2 class="discover__title">Cool Guy</h2>
-                      <span class="discover__description">Vector</span>
-                    </div>
-                  </div>
-                  <!--dicover 05-->
-                  <div class="discover__card swiper-slide">
-                    <img src="img/slider-05.jpg" alt="" class="discover__img" />
-                    <div class="discover__data">
-                      <h2 class="discover__title">Happy Place</h2>
-                      <span class="discover__description">Illutration</span>
-                    </div>
-                  </div>
-                  <!--dicover 06-->
-                  <div class="discover__card swiper-slide">
-                    <img src="img/slider-06.jpg" alt="" class="discover__img" />
-                    <div class="discover__data">
-                      <h2 class="discover__title">Coffe Maker</h2>
-                      <span class="discover__description">Vector</span>
-                    </div>
-                  </div>
-                  <!--dicover 07-->
-                  <div class="discover__card swiper-slide">
-                    <img src="img/slider-07.jpg" alt="" class="discover__img" />
-                    <div class="discover__data">
-                      <h2 class="discover__title">Red Car</h2>
-                      <span class="discover__description">Vector</span>
-                    </div>
-                  </div>
-                  <!--dicover 08-->
-                  <div class="discover__card swiper-slide">
-                    <img src="img/slider-08.jpg" alt="" class="discover__img" />
-                    <div class="discover__data">
-                      <h2 class="discover__title">Building</h2>
-                      <span class="discover__description">Vector</span>
-                    </div>
-                  </div>
-                  <!--dicover 09-->
-                  <div class="discover__card swiper-slide">
-                    <img src="img/slider-09.jpg" alt="" class="discover__img" />
-                    <div class="discover__data">
-                      <h2 class="discover__title">Astronaut</h2>
-                      <span class="discover__description">Vector</span>
-                    </div>
-                  </div>
-                  <!--dicover 10-->
-                  <div class="discover__card swiper-slide">
-                    <img src="img/slider-10.jpg" alt="" class="discover__img" />
-                    <div class="discover__data">
-                      <h2 class="discover__title">Machine</h2>
-                      <span class="discover__description">Photo</span>
-                    </div>
-                  </div>
+                <div class="card-media">
+                  <ion-icon
+                    name="phone-portrait-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
                 </div>
 
-                <!--navigation buttons -->
-                <div class="swiper-button-prev">
-                  <i class="ri-arrow-left-s-line"></i>
-                </div>
-                <div class="swiper-button-next">
-                  <i class="ri-arrow-right-s-line"></i>
-                </div>
-
-                <!-- pagination/dot -->
-                <div class="swiper-pagination"></div>
-              </div>
-            </div>
-          </div>
-          <!--end of Slider-->
-
-          <!--video playlist-->
-          <div class="video__container container">
-            <h2 class="section__title-2">
-              <span>Video</span>
-            </h2>
-            <div class="kontaner">
-              <div class="main-video-container">
-                <video
-                  src="videos/video-1.mp4"
-                  muted
-                  controls
-                  class="main-video"
-                ></video>
-                <h3 class="main-vid-title">eye blinking</h3>
-              </div>
-              <div class="video-list-container">
-                <div class="list">
-                  <video src="videos/video-1.mp4" class="list-video"></video>
-                  <h3 class="list-title">eye blinking</h3>
-                </div>
-                <div class="list">
-                  <video src="videos/video-2.mp4" class="list-video"></video>
-                  <h3 class="list-title">2D Character</h3>
-                </div>
-                <div class="list">
-                  <video src="videos/video-3.mp4" class="list-video"></video>
-                  <h3 class="list-title">robot arm</h3>
-                </div>
-                <div class="list">
-                  <video src="videos/video-4.mp4" class="list-video"></video>
-                  <h3 class="list-title">infographic animation</h3>
-                </div>
-                <div class="list">
-                  <video src="videos/video-5.mp4" class="list-video"></video>
-                  <h3 class="list-title">youtube opener</h3>
-                </div>
-                <div class="list">
-                  <video src="videos/video-6.mp4" class="list-video"></video>
-                  <h3 class="list-title">moving box</h3>
+                <div>
+                  <h3 class="card-title card-sm">Web Design</h3>
+                  <p class="body-sm">
+                    Beautiful and elegant designs with interfaces that are
+                    intuitive, efficient and pleasant to use for the user.
+                  </p>
                 </div>
               </div>
-            </div>
-          </div>
-          <!--end of video playlist-->
+            </li>
+
+            <li class="card-container">
+              <div
+                class="card card-md"
+                style="background-color: hsl(41, 99%, 64%)"
+              >
+                <div class="card-media">
+                  <ion-icon name="laptop-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="card-title card-sm">Development</h3>
+                  <p class="body-sm">
+                    Custom web development tailored to your specifications,
+                    designed to provide a flawless user experience.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="card-container">
+              <div
+                class="card card-md"
+                style="background-color: hsl(19, 97%, 85%)"
+              >
+                <div class="card-media">
+                  <ion-icon
+                    name="stats-chart-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="card-title card-sm">SEO Marketing</h3>
+                  <p class="body-sm">
+                    Design and transform website projects into mobile apps to
+                    provide a seamless user experience.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="card-container">
+              <div
+                class="card card-md"
+                style="background-color: hsl(221, 100%, 79%)"
+              >
+                <div class="card-media">
+                  <ion-icon name="shapes-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="card-title card-sm">Web Design</h3>
+                  <p class="body-sm">
+                    Custom web development tailored to your specifications,
+                    designed to provide a flawless user experience.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="card-container">
+              <div
+                class="card card-md"
+                style="background-color: hsl(76, 39%, 72%)"
+              >
+                <div class="card-media">
+                  <ion-icon
+                    name="code-slash-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="card-title card-sm">Development</h3>
+                  <p class="body-sm">
+                    Custom web development tailored to your specifications,
+                    designed to provide a flawless user experience.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="card-container">
+              <div
+                class="card card-md"
+                style="background-color: hsl(245, 100%, 90%)"
+              >
+                <div class="card-media">
+                  <ion-icon name="globe-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="card-title card-sm">SEO Marketing</h3>
+                  <p class="body-sm">
+                    Design and transform website projects into mobile apps to
+                    provide a seamless user experience.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
 
-      <!--projects section-->
-      <section class="section project" id="project">
-        <div class="blogs-content projects__container container">
-          <div class="demo__container">
-            <!--music player-->
-            <h2 class="section__title-3">
-              <span>Music Player</span>
-            </h2>
-            <div class="music__container app__content">
-              <div class="player-content">
-                <div class="reaper">
-                  <div class="top-bar">
-                    <i class="material-icons">expand_more</i>
-                    <span>Now Playing</span>
-                    <i class="material-icons">more_horiz</i>
-                  </div>
-                  <div class="img-area">
-                    <img src="" alt="" />
-                  </div>
-                  <div class="song-details">
-                    <p class="name"></p>
-                    <p class="artist"></p>
-                  </div>
-                  <div class="progress-area">
-                    <div class="progress-bar"></div>
-                    <div class="song-timer">
-                      <span class="current">0:00</span>
-                      <span class="duration">0:00</span>
-                    </div>
-                    <audio id="main-audio" src=""></audio>
-                  </div>
-                  <div class="catrolls">
-                    <i
-                      id="repeat-plist"
-                      class="material-icons"
-                      title="playlist looped"
-                      >repeat</i
-                    >
-                    <i id="prev" class="material-icons">skip_previous</i>
-                    <div class="play-pause">
-                      <i class="material-icons">play_arrow</i>
-                    </div>
-                    <i id="next" class="material-icons">skip_next</i>
-                    <i id="more-music" class="material-icons">queue_music</i>
-                  </div>
-                  <div class="music-list">
-                    <div class="harder">
-                      <div class="row">
-                        <i class="material-icons">queue_music</i>
-                        <span>music list</span>
-                      </div>
-                      <i id="close" class="material-icons">close</i>
-                    </div>
-                    <ul>
-                      <!---->
-                    </ul>
-                  </div>
+      <!--projects-->
+      <section
+        class="section portfolio"
+        aria-labelledby="portfolio-label"
+        id="projects"
+      >
+        <div class="container">
+          <h2
+            class="section-title headline-md text-center"
+            id="portfolio-label"
+          >
+            Latest Projects
+          </h2>
+          <ul class="portfolio-list">
+            <li>
+              <div class="portfolio-card">
+                <div
+                  class="card-banner img-holder"
+                  style="--width: ; --height: "
+                >
+                  <img
+                    src="./img/portfolio-1.jpg"
+                    width="800"
+                    height="540"
+                    loading="lazy"
+                    alt="Website Design for Marketing Agency Startup"
+                    class="img-cover"
+                  />
+                  <a
+                    href="#"
+                    class="btn-icon"
+                    aria-label="More about Website Design for Marketing Agency Startup"
+                  >
+                    <ion-icon
+                      name="arrow-forward-sharp"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
                 </div>
-              </div>
-              <div class="services__container container grid">
-                <article class="services__card">
-                  <img src="img/curved-arrow.svg" alt="" class="app__arrow-1" />
-                  <div class="services__border"></div>
-                  <div class="services__content">
-                    <div class="services__icon">
-                      <div class="services__box"></div>
-                      <i class="ri-layout-4-line"></i>
-                    </div>
-                    <h2 class="services__title">Music Player</h2>
-                    <p class="services__description">
-                      The music container contains the music title, the progress
-                      bar, the previous, play, next button icons, and the music
-                      image.
-                    </p>
-                  </div>
-                </article>
-              </div>
-            </div>
 
-            <!--card game-->
-            <h2 class="section__title-3">
-              <span>Card Game</span>
-            </h2>
-            <div class="game__container app__content">
-              <!-- <h2 class="section__title-1 app__title">
-                      <span>Card Game</span>
-                    </h2> -->
-              <div class="card-content">
-                <div class="riper">
-                  <ul class="cards">
-                    <li class="card">
-                      <div class="view front-view">
-                        <img src="img/que_icon.svg" alt="icon" />
-                      </div>
-                      <div class="view back-view">
-                        <img src="img/img-1.png" alt="card-img" />
-                      </div>
-                    </li>
-                    <li class="card">
-                      <div class="view front-view">
-                        <img src="img/que_icon.svg" alt="icon" />
-                      </div>
-                      <div class="view back-view">
-                        <img src="img/img-2.png" alt="card-img" />
-                      </div>
-                    </li>
-                    <li class="card">
-                      <div class="view front-view">
-                        <img src="img/que_icon.svg" alt="icon" />
-                      </div>
-                      <div class="view back-view">
-                        <img src="img/img-3.png" alt="card-img" />
-                      </div>
-                    </li>
-                    <li class="card">
-                      <div class="view front-view">
-                        <img src="img/que_icon.svg" alt="icon" />
-                      </div>
-                      <div class="view back-view">
-                        <img src="img/img-4.png" alt="card-img" />
-                      </div>
-                    </li>
-                    <li class="card">
-                      <div class="view front-view">
-                        <img src="img/que_icon.svg" alt="icon" />
-                      </div>
-                      <div class="view back-view">
-                        <img src="img/img-5.png" alt="card-img" />
-                      </div>
-                    </li>
-                    <li class="card">
-                      <div class="view front-view">
-                        <img src="img/que_icon.svg" alt="icon" />
-                      </div>
-                      <div class="view back-view">
-                        <img src="img/img-6.png" alt="card-img" />
-                      </div>
-                    </li>
-                    <li class="card">
-                      <div class="view front-view">
-                        <img src="img/que_icon.svg" alt="icon" />
-                      </div>
-                      <div class="view back-view">
-                        <img src="img/img-5.png" alt="card-img" />
-                      </div>
-                    </li>
-                    <li class="card">
-                      <div class="view front-view">
-                        <img src="img/que_icon.svg" alt="icon" />
-                      </div>
-                      <div class="view back-view">
-                        <img src="img/img-6.png" alt="card-img" />
-                      </div>
-                    </li>
-                    <li class="card">
-                      <div class="view front-view">
-                        <img src="img/que_icon.svg" alt="icon" />
-                      </div>
-                      <div class="view back-view">
-                        <img src="img/img-1.png" alt="card-img" />
-                      </div>
-                    </li>
-                    <li class="card">
-                      <div class="view front-view">
-                        <img src="img/que_icon.svg" alt="icon" />
-                      </div>
-                      <div class="view back-view">
-                        <img src="img/img-2.png" alt="card-img" />
-                      </div>
-                    </li>
-                    <li class="card">
-                      <div class="view front-view">
-                        <img src="img/que_icon.svg" alt="icon" />
-                      </div>
-                      <div class="view back-view">
-                        <img src="img/img-3.png" alt="card-img" />
-                      </div>
-                    </li>
-                    <li class="card">
-                      <div class="view front-view">
-                        <img src="img/que_icon.svg" alt="icon" />
-                      </div>
-                      <div class="view back-view">
-                        <img src="img/img-4.png" alt="card-img" />
-                      </div>
-                    </li>
-                    <div class="details">
-                      <p id="pipi" class="time">
-                        Time: <span><b>20</b>s</span>
-                      </p>
-                      <p id="pipi" class="flips">
-                        Flips: <span><b>0</b></span>
-                      </p>
-                      <button>Refresh</button>
-                    </div>
-                  </ul>
+                <div class="card-content">
+                  <span class="chip label-md">Web Design</span>
+                  <h3 class="title-md">
+                    Website Design for Marketing Agency Startup
+                  </h3>
+                  <p class="card-text">
+                    Project that you carry out in the design and structure of
+                    the layout, showing the design at the client's request.
+                  </p>
+                  <a href="#" class="btn btn-primary">View Project</a>
                 </div>
               </div>
-              <div class="services__container container grid">
-                <article class="services__card">
-                  <img src="img/curved-arrow.svg" alt="" class="app__arrow-2" />
-                  <div class="services__border"></div>
-                  <div class="services__content">
-                    <div class="services__icon">
-                      <div class="services__box"></div>
-                      <i class="ri-layout-4-line"></i>
-                    </div>
-                    <h2 class="services__title">Card Game</h2>
-                    <p class="services__description">
-                      The objective of this game is to collect the most pairs of
-                      cards, then If the user successfully match a pair and get
-                      to keep the cards, and that player gets another turn.
-                    </p>
-                  </div>
-                </article>
-              </div>
-            </div>
+            </li>
 
-            <!--photo editor-->
-            <h2 class="section__title-3">
-              <span>Photo Editor</span>
-            </h2>
-            <div class="pheditor__container app__content">
-              <div class="pheditor-container">
-                <div class="combainer disable">
-                  <div class="waiter">
-                    <div class="editor-panel">
-                      <div class="filter">
-                        <label class="title">Filters</label>
-                        <div class="options">
-                          <button id="brightness" class="active">
-                            Brightness
-                          </button>
-                          <button id="saturation">Saturation</button>
-                          <button id="inversion">Inversion</button>
-                          <button id="grayscale">Grayscale</button>
-                        </div>
-                        <div class="slider">
-                          <div class="filter-info">
-                            <p class="name">Brightness</p>
-                            <p class="value">100%</p>
-                          </div>
-                          <input type="range" value="100" min="0" max="200" />
-                        </div>
-                      </div>
-                      <div class="rotate">
-                        <label class="title">Rotate & Flip</label>
-                        <div class="options">
-                          <button id="left">
-                            <i class="fa-solid fa-rotate-left"></i>
-                          </button>
-                          <button id="right">
-                            <i class="fa-solid fa-rotate-right"></i>
-                          </button>
-                          <button id="horizontal">
-                            <i class="bx bx-reflect-vertical"></i>
-                          </button>
-                          <button id="vertical">
-                            <i class="bx bx-reflect-vertical"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="before-img">
-                      <img
-                        src="img/image-placeholder.svg"
-                        alt="Image Preview"
-                      />
-                    </div>
-                  </div>
-                  <div class="colestrol">
-                    <button class="reset-filter">Reset Filters</button>
-                    <div class="row">
-                      <input
-                        type="file"
-                        class="file-input"
-                        accept="image/*"
-                        hidden
-                      />
-                      <button class="choose-img">Choose Image</button>
-                      <button class="save-img">Save Image</button>
-                    </div>
-                  </div>
+            <li>
+              <div class="portfolio-card">
+                <div
+                  class="card-banner img-holder"
+                  style="--width: ; --height: "
+                >
+                  <img
+                    src="./img/portfolio-2.jpg"
+                    width="800"
+                    height="540"
+                    loading="lazy"
+                    alt="Website Design for Marketing Agency Startup"
+                    class="img-cover"
+                  />
+                  <a
+                    href="#"
+                    class="btn-icon"
+                    aria-label="More about Website Design for Marketing Agency Startup"
+                  >
+                    <ion-icon
+                      name="arrow-forward-sharp"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+
+                <div class="card-content">
+                  <span class="chip label-md">Development</span>
+                  <h3 class="title-md">
+                    Land page website for company startup
+                  </h3>
+                  <p class="card-text">
+                    I design and develop services for customers of all sizes,
+                    specializing in creating stylish, modern websites, web
+                    services and online stores
+                  </p>
+                  <a href="#" class="btn btn-primary">View Project</a>
                 </div>
               </div>
-              <div class="services__container container grid">
-                <article class="services__card">
-                  <img src="img/curved-arrow.svg" alt="" class="app__arrow-3" />
-                  <div class="services__border"></div>
-                  <div class="services__content">
-                    <div class="services__icon">
-                      <div class="services__box"></div>
-                      <i class="ri-layout-4-line"></i>
-                    </div>
-                    <h2 class="services__title">Image Editor</h2>
-                    <p class="services__description">
-                      Allows user to quickly edit pictures after they have been
-                      captured for enhancing them or completely changing their
-                      look.
-                    </p>
-                  </div>
-                </article>
+            </li>
+
+            <li>
+              <div class="portfolio-card">
+                <div
+                  class="card-banner img-holder"
+                  style="--width: ; --height: "
+                >
+                  <img
+                    src="./img/portfolio-3.jpg"
+                    width="800"
+                    height="540"
+                    loading="lazy"
+                    alt="Website Design for Marketing Agency Startup"
+                    class="img-cover"
+                  />
+                  <a
+                    href="#"
+                    class="btn-icon"
+                    aria-label="More about Website Design for Marketing Agency Startup"
+                  >
+                    <ion-icon
+                      name="arrow-forward-sharp"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+
+                <div class="card-content">
+                  <span class="chip label-md">Web Design</span>
+                  <h3 class="title-md">
+                    Website Design for Marketing Agency Startup
+                  </h3>
+                  <p class="card-text">
+                    I design and develop services for customers of all sizes,
+                    specializing in creating stylish, modern websites, web
+                    services and online stores
+                  </p>
+                  <a href="#" class="btn btn-primary">View Project</a>
+                </div>
               </div>
-            </div>
-          </div>
+            </li>
+
+            <li>
+              <div class="portfolio-card">
+                <div
+                  class="card-banner img-holder"
+                  style="--width: ; --height: "
+                >
+                  <img
+                    src="./img/portfolio-4.jpg"
+                    width="800"
+                    height="540"
+                    loading="lazy"
+                    alt="Website Design for Marketing Agency Startup"
+                    class="img-cover"
+                  />
+                  <a
+                    href="#"
+                    class="btn-icon"
+                    aria-label="More about Website Design for Marketing Agency Startup"
+                  >
+                    <ion-icon
+                      name="arrow-forward-sharp"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+
+                <div class="card-content">
+                  <span class="chip label-md">Web Design</span>
+                  <h3 class="title-md">
+                    Website Design for Marketing Agency Startup
+                  </h3>
+                  <p class="card-text">
+                    I design and develop services for customers of all sizes,
+                    specializing in creating stylish, modern websites, web
+                    services and online stores
+                  </p>
+                  <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
 
-      <!--contact section-->
-      <section class="section contact" id="contact">
+      <!--contact-->
+      <section class="contact section" id="contact">
         <div class="contact__container grid">
           <div class="contact__data">
             <h2 class="section__title-2">
@@ -931,7 +760,7 @@
                   class="contact__input"
                   id="subject"
                   required
-                  placeholder="Subject"
+                  placeholder="Subect"
                 />
                 <label for="subject" class="contact__label">Subject</label>
               </div>
@@ -951,7 +780,10 @@
               <p class="contact__message" id="contact-message">
                 <!-- Message sent successfully ✅ -->
               </p>
-              <button type="submit" class="contact__button button">
+              <button
+                type="submit"
+                class="btn btn-tertiary contact__button button"
+              >
                 <i class="ri-send-plane-line"></i>Send Message
               </button>
             </form>
@@ -973,23 +805,21 @@
 
               <div class="contact__social-links">
                 <a
-                  href="https://api.whatsapp.com/send?phone=6285290321716"
-                  target="_blank"
-                  class="contact__social-link"
-                >
-                  <i class="ri-whatsapp-line"></i>
-                </a>
-
-                <a
-                  href="https://web.facebook.com/edi.heryanto.3"
+                  href="https://www.facebook.com/"
                   target="_blank"
                   class="contact__social-link"
                 >
                   <i class="ri-facebook-circle-line"></i>
                 </a>
-
                 <a
-                  href="https://www.linkedin.com/in/edi-heryanto-a85b89106/"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  class="contact__social-link"
+                >
+                  <i class="ri-instagram-line"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/"
                   target="_blank"
                   class="contact__social-link"
                 >
@@ -1001,7 +831,6 @@
         </div>
       </section>
     </main>
-
     <!--footer-->
     <footer class="footer">
       <div class="footer__container container grid">
@@ -1010,14 +839,14 @@
             <a href="#about" class="footer__link">About</a>
           </li>
           <li>
-            <a href="#service" class="footer__link">Services</a>
+            <a href="#services" class="footer__link">Services</a>
           </li>
           <li>
-            <a href="#project" class="footer__link">Projects</a>
+            <a href="#projects" class="footer__link">Projects</a>
           </li>
         </ul>
         <span class="footer__copy"
-          >&#169; 2023 All Rights Reserved By <a href="#">Ediheri.</a></span
+          >&#169; All Rights Reserved By <a href="#">Ediheri.</a></span
         >
       </div>
     </footer>
@@ -1030,21 +859,23 @@
     <!--scroll reveal js-->
     <script src="js/scrollRevealJs.js"></script>
 
-    <!--swiper photo js-->
-    <script src="js/unpkg.com_swiper@10.0.4_swiper-bundle.min.js"></script>
-
     <!--email js-->
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
 
-    <script src="js/app.js"></script>
-    <script src="js/playermusic.js"></script>
-    <script src="js/card-games.js"></script>
-    <script src="js/editorphoto.js"></script>
-    <script src="js/slider.js"></script>
-    <script src="js/video-playlist.js"></script>
-    <script src="js/progress-bar.js"></script>
+    <!-- ion icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!--main js-->
+    <script src="js/main.js"></script>
   </body>
 </html>
