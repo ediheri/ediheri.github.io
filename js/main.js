@@ -160,7 +160,7 @@ const sr = ScrollReveal({
 
 sr.reveal(
   `.home__perfil, .about__image, .contact__mail
-            .skill-list, .skill-banner, .projects-desc`,
+            .skill-list, .projects-desc`,
   { origin: "right" }
 );
 
@@ -168,9 +168,9 @@ sr.reveal(
   `.home__name, .home__info,
             .about__container, .section__title-1, .about__info,
             .contact__social, .contact__data,
-            .section-title, .img-holder`,
+            .section-title`,
   { origin: "left" }
 );
-sr.reveal(`.services__card, .projects__card, .card-container, .skill-item`, {
+sr.reveal(`.services__card, .projects__card, .skill-item, .service-card`, {
   interval: 100,
 });
