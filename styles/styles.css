@@ -488,7 +488,7 @@ body.dark-theme{
 }
 .home__img{
     position: relative;
-    z-index: 10;
+    z-index: 2;
 }
 .home__shadow{
     width: 100%;
@@ -519,7 +519,7 @@ body.dark-theme{
 .home__perfil .geometric-box{
     top: 2.5rem;
     left: -.7rem;
-    z-index: 10;
+    z-index: 2;
 }
 .home__social{
     height: max-content;
@@ -547,14 +547,11 @@ body.dark-theme{
     margin-top: 4rem;
 }
 .home__info .section-text {
-    margin-bottom: 20px;
-}
-.home__description{
     text-align: center;
     color: var(--title-color);
     margin-bottom: 1.5rem;
 }
-.home__description b{
+.home__info .section-text b{
     background: linear-gradient(90deg, hsla(14, 98%, 50%, .3), hsla(14, 98%, 50%, 0));
 }
 .home__scroll{
@@ -659,7 +656,7 @@ body.dark-theme{
         }
         .about__shadow{
             width: 150px;
-            height: 350px;
+            height: 340px;
             background-color: var(--body-color);
             top: -2.5rem;
             right: -3.5rem;
@@ -685,21 +682,21 @@ body.dark-theme{
             bottom: 1.5rem;
         }
         .about__info{
-            padding-left: 1.25rem;
+            padding-left: 2rem;
         }
-        .about__description{
+        .about__info .section-text{
             position: relative;
             color: var(--title-color);
             margin-bottom: 1.5rem;
         }
-        .about__description::after{
+        .about__info .section-text::after{
             content: '';
-            width: 20px;
+            width: 15px;
             height: 1px;
             background-color: var(--title-color);
             position: absolute;
             left: -1.75rem;
-            top: .5rem;
+            top: 1rem;
         }
         .about__list{
             list-style: square;
@@ -1689,7 +1686,7 @@ textarea.input-field {
             border: 6px solid var(--black-color);
         }
         .home__name,
-        .home__description{
+        .section-text{
             text-align: initial;
         }
         .home__name{
@@ -1699,15 +1696,15 @@ textarea.input-field {
             margin-top: 0;
             align-self: flex-start;
         }
-        .home__description{
+        .home__info .section-text{
+            text-align: initial;
             position: relative;
-            font-size: var(--h2-font-size);
             margin-bottom: 5.5rem;
             padding-left: 3rem;
         }
-        .home__description::after{
+        .section-text::after{
             content: '';
-            width: 32px;
+            width: 25px;
             height: 2px;
             background-color: var(--title-color);
             position: absolute;
@@ -1803,12 +1800,11 @@ textarea.input-field {
         .about__info{
             align-self: flex-start;
         }
-        .about__description{
-            font-size: var(--h2-font-size);
+        .about__info .section-text {
             margin-bottom: 2rem;
         }
-        .about__description::after{
-            width: 32px;
+        .about__info .section-text::after{
+            width: 25px;
             height: 2px;
             left: -3rem;
             top: 14px;
