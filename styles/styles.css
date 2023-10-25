@@ -291,8 +291,8 @@ body.dark-theme{
 .geometric-box::after{
     content: '';
     position: absolute;
-    width: 16px;
-    height: 16px;
+    width: 21px;
+    height: 21px;
     border: 3px solid var(--black-color);
     left: -5px;
     top: -5px;
@@ -524,7 +524,7 @@ body.dark-theme{
 .home__social{
     height: max-content;
     position: absolute;
-    left: -3rem;
+    left: -5rem;
     top: 0;
     bottom: 0;
     margin: auto 0;
@@ -534,7 +534,7 @@ body.dark-theme{
 .home__social-link{
     background-color: var(--black-color-light);
     color: var(--white-color);
-    font-size: 1.25rem;
+    font-size: var(--fs-3);
     padding: 6px;
     display: grid;
     place-items: center;
@@ -1346,7 +1346,7 @@ body.dark-theme{
         background-color: var(--black-color-light);
         padding: 6px;
         color: var(--white-color);
-        font-size: 1.25rem;
+        font-size: var(--fs-3);
         display: grid;
         place-items: center;
         transition: background-color .3s;
@@ -1685,8 +1685,7 @@ textarea.input-field {
             bottom: -1.25rem;
             border: 6px solid var(--black-color);
         }
-        .home__name,
-        .section-text{
+        .home__name{
             text-align: initial;
         }
         .home__name{
@@ -1702,7 +1701,7 @@ textarea.input-field {
             margin-bottom: 5.5rem;
             padding-left: 3rem;
         }
-        .section-text::after{
+        .home__info .section-text::after{
             content: '';
             width: 25px;
             height: 2px;
@@ -1747,10 +1746,10 @@ textarea.input-field {
         }
         .home__social{
             left: initial;
-            right: -6rem;
+            right: -8rem;
         }
         .home__social-link{
-            font-size: 1.5rem;
+            font-size: var(--fs-1);
             padding: .5rem;
         }
 
@@ -1793,7 +1792,8 @@ textarea.input-field {
             height: 64px;
             right: -.75rem;
         }
-        .about__container .section__title-1{
+        .about__container .section-title{
+            text-align: initial;
             align-self: flex-end;
             margin-inline: 0;
         }
