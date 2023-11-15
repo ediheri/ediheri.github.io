@@ -17,7 +17,7 @@ const /** {NodeElement} */ $searchBtn =
 
 $searchBtn.addEventListener("click", function () {
   if ($searchField.value)
-    window.location = `/recipes.html?q=${$searchField.value}`;
+    window.location = `../recipe app/recipes.html?q=${$searchField.value}`;
 });
 
 /**
